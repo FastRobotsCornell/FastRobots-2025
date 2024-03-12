@@ -27,18 +27,18 @@ For this lab, we will work on implementing stationary (in place) orientation con
 
 [![Kick](https://img.youtube.com/vi/SExEftZorVM/1.jpg)](https://youtu.be/SExEftZorVM "Kick")
 
-####PID Input Signal
+###PID Input Signal
 * You should integrate your gyroscope to get an estimate for the orientation of the robot.
 * Are there any problems that digital integration might lead to over time? Are there ways to minimize these problems?
 * Does your sensor have any bias, and are there ways to fix this?
 * Are there limitations on the sensor itself to be aware of? What is the maximum rotational velocity that the gyroscope can read (look at spec sheets and code documentation on github). Is this sufficient for our applications, and is there was to configure this parameter? 
 
-####Derivative Term
+###Derivative Term
 * Does it make sense to take the derivative of a signal that is the integral of another signal.
 * Think about derivative kick. Does changing your setpoint while the robot is running cause problems with your implementation of the PID controller?
 * Is a lowpass filter needed before your derivative term?
 
-####Programming Implementation 
+###Programming Implementation 
 * Have you implemented your code in such a way that you can continue sending an processing Bluetooth commands while your controller is running?
 * This is essential for being able to tune the PID gains quickly.
 * This is also essential for being able to change the setpoint while the robot is running.
