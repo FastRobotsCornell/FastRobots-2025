@@ -5,7 +5,7 @@
 # Lab 6: Orientation Control
 
 ## Objective
-The purpose of this lab is to get experience with orientation PID using the IMU. In [Lab 5](Lab5.md), PID control was done on wall distance using the TOF sensors, this lab will involve controlling the yaw of your robot using the IMU. Like last lab, you can pick whatever controller works best for your system. 4000-level students can choose between P, PI, PID, PD; 5000-level students can choose between PI and PID controllers. Your hand-in will be judged upon your demonstrated understanding of PID control and practical implementation constraints, and the quality of your solution. 
+The purpose of this lab is to get experience with orientation PID using the IMU. In [Lab 5](Lab5.md), PID control was done on wall distance using the TOF sensors, this lab will involve controlling the yaw of your robot using the IMU. Like last lab, you can pick whatever controller works best for your system. 4000-level students can choose between P, PI, PID, PD; 5000-level students can choose between PI and PID controllers. Your hand-in will be judged upon your demonstrated understanding of PID control and practical implementation constraints, and the quality of your solution.  
 
 This lab is part of a series of labs (5-8) on PID control, sensor fusion, and stunts. 
 
@@ -23,20 +23,29 @@ This lab is part of a series of labs (5-8) on PID control, sensor fusion, and st
 
 ### Orientation Control
 
-For this task, you will have the robot drive fast forward toward a wall, then turn with drift to do a 180 degree turn, and return in the direction it came from without stopping. The PID controller should be controlling the orientation of your robot by introducing a difference in motor speeds. Before trying to get your car to drift, try controlling the orientation of your car while it is stationary, then introduce a base speed. To make your data useful for lab 7, be sure to start 4m from a wall and get within 1m before turning. 
-
-Beyond the considerations mentioned above, think about the following:
-  - How do you get the orientation of the robot? How can you minimize the error introduced by discrete integration of the gyroscope? 
-  - How fast is your robot turning? You may have to check whether you are maxing out the gyroscope. The library will allow you to adjust the range. 
-  - The PID controller should control an “offset” or differential in wheel speed. That way you can control the orientation even if the car is moving at a set base speed.
-
-Below you can see an example of the controller maintaining a constant orientation even when the robot is kicked. 
+For this lab, we will work on implementing stationary (in place) orientation control. The control signal (output from the PID controller) will be a differential drive value. The wheel should be driven at the same speed in opposite directions in order to control the orientation of the robot as shown in the video below. Some considerations to think about when implementing your controller:
 
 [![Kick](https://img.youtube.com/vi/SExEftZorVM/1.jpg)](https://youtu.be/SExEftZorVM "Kick")
 
-Below is an example of the robot drifting and doing a 180 degree turn as well as graphs of the setpoint, angle, and control signal for the PID controller. 
+PID Input Signal
+* You should integrate your gyroscope to get an estimate for the orientation of the robot.
+* Are there any problems that digital integration might lead to over time? Are there ways to minimize these problems?
+* Does your sensor have any bias, and are there ways to fix this?
+* Are there limitations on the sensor itself to be aware of? What is the maximum rotational velocity that the gyroscope can read (look at spec sheets and code documentation on github). Is this sufficient for our applications, and is there was to configure this parameter? 
 
-[![Drift](https://img.youtube.com/vi/aHLyelvja5k/1.jpg)](https://youtu.be/aHLyelvja5k "180 Drift")
+Derivative Term
+* Does it make sense to take the derivative of a signal that is the integral of another signal.
+* Think about derivative kick. Does changing your setpoint while the robot is running cause problems with your implementation of the PID controller?
+* Is a lowpass filter needed before your derivative term?
+
+Programming Implementation 
+* Have you implemented your code in such a way that you can continue sending an processing Bluetooth commands while your controller is running?
+* This is essential for being able to tune the PID gains quickly.
+* This is also essential for being able to change the setpoint while the robot is running.
+* Think about future applications of your PID controller with regards to navigation or stunts. Will you need to be able to update the setpoint in real time?
+* Can you control the orientation while the robot is driving forward or backward? This is not required for this lab, but consider how this might be implemented in the future and what steps you can take now to make adding this functionality simple.
+
+Include graphs of all appropriate measurements needed to debug your PID controller. Below is an example the set point, angle and motor offset plotted as a function of time. Observe the overshoot and settling time of the angle and the response of the motor values. 
 
 <img src="./../Figs/Lab6_TaskBSetpoint.png" width="400">
 
