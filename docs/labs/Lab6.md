@@ -38,11 +38,11 @@ Below is an example of the robot drifting and doing a 180 degree turn as well as
 
 [![Drift](https://img.youtube.com/vi/aHLyelvja5k/1.jpg)](https://youtu.be/aHLyelvja5k "180 Drift")
 
-<img src="./Figs/Lab6_TaskBSetpoint.png" width="400">
+<img src="../Figs/Lab6_TaskBSetpoint.png" width="400">
 
-<img src="./Figs/Lab6_TaskBAngle.png" width="400">
+<img src="../Figs/Lab6_TaskBAngle.png" width="400">
 
-<img src="./Figs/Lab6_TaskBMotorOffsets.png" width="400">
+<img src="../Figs/Lab6_TaskBMotorOffsets.png" width="400">
 
 ## Tasks for 5000-level students
    
