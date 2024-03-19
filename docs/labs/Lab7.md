@@ -6,7 +6,7 @@
 
 ## Objective
 
-The objective of Lab 7 is to implement a Kalman Filter, which will help you execute the behavior you did in [Lab 5](Lab5.md) faster. The goal now is to use the Kalman Filter to supplement your slowly sampled ToF values, such that you can speed towards the wall as fast as possible, then either stop 1ft from the wall or turn within 2ft  Note that part of the lab 8 grade is based on the speed of your solution.  
+The objective of Lab 7 is to implement a Kalman Filter, which will help you execute the behavior you did in [Lab 5](Lab5.md) faster. The goal now is to use the Kalman Filter to supplement your slowly sampled ToF values, such that you can speed towards the wall as fast as possible, then either stop 1ft from the wall or turn within 2ft.
 
 ## Parts Required
 
@@ -26,13 +26,14 @@ We will have a few setups in and just outside of the labs with crash-pillows mou
 
 ### 1. Estimate drag and momentum 
 
-To build the state space model for your system, you will need to estimate the drag and momentum terms for your A and B matrices. Here, we will do this using a step response. Drive the car towards a wall while logging motor input values and ToF sensor output. 
-  1. Choose your step-size to be of similar size to the PWM value you used in Lab 6 (to keep the dynamics similar). If you never specified a PWM value directly, but rather computed one using your PID controller, pick something on the order of the maximum PWM value that was produced.  
-  2. Make sure your step time is long enough to reach steady state (you likely have to use active breaking of the car to avoid crashing into the wall).
+To build the state space model for your system, you will need to estimate the drag and momentum terms for your A and B matrices. Here, we will do this using a step response. Drive the car towards a wall at a constant imput motor speed while logging motor input values and ToF sensor output. 
+  1. Choose your step responce, u(t), to be of similar size to the PWM value you used in Lab 6 (to keep the dynamics similar). Pick something between 50%-100% of the maximum u.  
+  2. Make sure your step time is long enough to reach steady state (you likely have to use active breaking of the car to avoid crashing into the wall). Make sure to use a peice of foam to avoid hitting to wall and damaging your car.
   3. Show graphs for the TOF sensor output, the (computed) speed, and the motor input. Please ensure that the x-axis is in seconds.
-  4. Measure both the steady state speed and the 90% rise time.
+  4. Measure the steady state speed, 90% rise time, and the speed at 90% risetime. (Note, this doesn't have to be 90% rise time. You could also use somewhere between 60-90%, but the speed and time must correspond to get an accurate estimate for m. 
+  5. When sending this data back to your laptop, make sure to save the data in a file so that you can use it even after your Jupyter kernal restarts. Consider writing the data to a [CSV](https://docs.python.org/3/library/csv.html) file, [pickle file](https://docs.python.org/3/library/pickle.html), or [shelve file](https://docs.python.org/3/library/pickle.html). 
 
-### 2. Initialize KF 
+### 2. Initialize KF (Python)
 
 1. Compute the A and B matrix given the terms you found above, and discretize your matrices. Be sure to note the sampling time in your write-up.
 
@@ -56,15 +57,16 @@ To build the state space model for your system, you will need to estimate the dr
    sig_z=np.array([[sigma_3**2]])
    ```
 
-### 3. Implement and test your Kalman Filter in Jupyter
+### 3. Implement and test your Kalman Filter in Jupyter (Python)
 
-1. To sanity check your parameters, implement your Kalman Filter in Jupyter first. You can do this using the function in the code below (for ease, variable names follow the convention from the [lecture slides](lectures/FastRobots-13-KF.pdf)). 
+1. To sanity check your parameters, implement your Kalman Filter in Jupyter first. You can do this using the function in the code below (for ease, variable names follow the convention from the [lecture slides](../lectures/FastRobots-13-KF.pdf)). 
    - Import timing, ToF, and PWM data from a straight run towards the wall (you should have this data handy from lab 5).  
    - You may need to format your data first. For the Kalman Filter to work, you'll need all input arrays to be of equal length. That means that you might have to interpolate data if for example you have fewer ToF measurements than you have motor input updates. Numpy's linspace and interp commands can help you accomplish this. 
    - Loop through all of the data, while calling the Kalman Filter.
    - Remember to scale your input from 1 to the actual value of your step size (u/step_size).
    - Plot the Kalman Filter output to demonstrate how well your Kalman Filter estimated the system state.
    - If your Kalman Filter is off, try adjusting the covariance matrices. Discuss how/why you adjust them. 
+   - Be sure to include a discussion of all the paramters that affect the performace of your filter.
 
 
 ```cpp
@@ -83,11 +85,19 @@ def kf(mu,sigma,u,y):
     return mu,sigma
 ```
 
-### 4.B Implement the Kalman Filter on the Robot (Optional, for up to 4 bonus points!)
+### Additional tasks for 5000-level students
 
-(Original task)
+Run your Kalman filter at a faster frequency than the ToF readings. In between readings, use the prediction step to estimate the state of the car. Similar to the linear extrapolation step from lab 6, but use the prediction step of your Kalman filter instead. 
 
-If you have time, integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
+Make sure to use the appropriate delta t when discretizing the A and B matrices. 
+
+Plot the results.
+
+### Extra Credit: Implement the Kalman Filter on the Robot (Optional, for up to 8 bonus points!)
+
+If you have time, integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Make sure to remove the linear extrpolation step before doing this. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
+
+If you have even more time, Rather than use linear extrapolation to estimate the position of the car between ToF readings, use the prediction step of the Kalman filter. 
 
 The following code snippets gives helpful hints on how to do matrix operations on the robot:
 
@@ -103,11 +113,6 @@ state(1,0) = 1;                    //Writes only location 1 in the 2x1 matrix.
 Sigma_p = Ad*Sigma*~Ad + Sigma_u;  //Example of how to compute Sigma_p (~Ad equals Ad transposed) 
 ```
 
-### 5 Speed things up (optional)
-
-If you want to get a head start on Lab 8, try speeding up your robot using your new KF (or extrapolator) to increase the execution time of your control loop. 
-
-### Additional tasks for 5000-level students
 
 You're off the hook in this lab.
 
