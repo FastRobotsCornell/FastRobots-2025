@@ -93,7 +93,7 @@ Make sure to use the appropriate delta t when discretizing the A and B matrices.
 
 Plot the results.
 
-### Extra Credit: Implement the Kalman Filter on the Robot (Optional, for up to 8 bonus points!)
+### Extra Credit: Implement the Kalman Filter on the Robot (Optional, for up to 10 bonus points!)
 
 If you have time, integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Make sure to remove the linear extrpolation step before doing this. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
 
