@@ -1,4 +1,4 @@
-# Enabling IMU DMP
+# Enabling the IMU DMP
 
 In Fast Robots, we use the [Pimoroni ICM-20948 9DoF breakout board](https://shop.pimoroni.com/products/icm20948) to detect our car's orientation. The Pimoroni board is a platform for the TDK InvenSense ICM-20948, a 9-axis motion tracking sensor. We also use the SparkFun ICM-20948 [Arduino library](https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary), which was written by SparkFun for their own [9DoF IMU breakout board](https://www.sparkfun.com/products/15335), but is compatible with any board fitted with the TDK InvenSense ICM-20948, which we'll simply refer to as the "ICM".
 
@@ -66,4 +66,4 @@ node index.js
 
 The console should start outputting quaternion data. The visualization can then be opened under [http://localhost:3000/](http://localhost:3000/) in a browser.
 
-Acknowledgements: Special thanks to Stephen Wagner for providing this tutorial to Fast Robots.
+Acknowledgements: Special thanks to Stephan Wagner for providing this tutorial to Fast Robots.
