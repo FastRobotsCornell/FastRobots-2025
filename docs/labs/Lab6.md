@@ -30,7 +30,7 @@ For this lab, we will work on implementing stationary (in place) orientation con
 ### PID Input Signal
 * You should integrate your gyroscope to get an estimate for the orientation of the robot.
 * Are there any problems that digital integration might lead to over time? Are there ways to minimize these problems?
-* Does your sensor have any bias, and are there ways to fix this? How fast does your errow grow as a result of this bias? Conisder using the onboard [digital motion processor (DMP)](../tutorials/dmp.md) built into yout IMU to minize yaw drift.
+* Does your sensor have any bias, and are there ways to fix this? How fast does your errow grow as a result of this bias? Conisder using the onboard [digital motion processor (DMP)](../tutorials/dmp.md) built into your IMU to minize yaw drift.
 * Are there limitations on the sensor itself to be aware of? What is the maximum rotational velocity that the gyroscope can read (look at spec sheets and code documentation on github). Is this sufficient for our applications, and is there was to configure this parameter? 
 
 ### Derivative Term
