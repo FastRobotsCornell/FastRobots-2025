@@ -44,7 +44,7 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
    - How accurate is your accelerometer? You may want to do a two-point calibration (i.e. measure the output at either end of the range, and calculate the conversion factor such that the final output matches the expected output). 
 2. The accelerometer is noisy, especially when you run the RC car in its proximity. Record some of this data, and analyze the noise in the frequency spectrum. 
    - Here's a helpful tutorial to do a [Fourier Transform in Python](https://alphabold.com/fourier-transform-in-python-vibration-analysis/)
-   - Use this analysis to guide your choice of a complimentary low pass filter cut off frequency (recall implementation details from the [lecture](./lectures/FastRobots-4-IMU.pdf). Discuss how the choice of cut off frequency affects the output.
+   - Use this analysis to guide your choice of a complimentary low pass filter cut off frequency (recall implementation details from the [lecture](../lectures/FastRobots-4-IMU.pdf). Discuss how the choice of cut off frequency affects the output.
    - If there's little noise, check out the information on the chip and reason about why that might be. (Note, this may differ between kits)
 3. Include a graph of Fourier Transform of your accelerometer data. Reason about what a good cutoff frequency is. 
    - Think about the sample rate of your accelerometer.

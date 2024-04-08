@@ -16,7 +16,7 @@ The quality of your map will depend on how many readings you manage to obtain du
 
 ## Prelab
 
-Consider checking out [lecture 2 on transformation matrices](./lectures/FastRobots-2-TransformationMatrices.pdf) again.
+Consider checking out [lecture 2 on transformation matrices](../lectures/FastRobots-2-TransformationMatrices.pdf) again.
 
 ### Control
 
@@ -35,7 +35,7 @@ You can complete your control in either one of the following ways. If your contr
    - If you choose this option, you can score up to 7.5 points in this lab.
 
 3. _Angular speed control:_ Create a PID controller that works directly on the raw gyroscope values. This is beneficial over orientation control, because you avoid accumulating errors during integration.  
-   - You will likely need to low pass filter the gyroscope values - read up on how we did that with a complementary LPF in [Lecture 4, slide 23](/lectures/FastRobots-4-IMU.pdf). 
+   - You will likely need to low pass filter the gyroscope values - read up on how we did that with a complementary LPF in [Lecture 4, slide 23](../lectures/FastRobots-4-IMU.pdf). 
    - You can also consider adjusting the integration time of the TOF sensor, using `proximitySensor.setProxIntegrationTime(4); //A value of 1 to 8 is valid`. Note that this function is only available in the [Tof Pololu library](https://github.com/pololu/vl53l0x-arduino).  
    - One way to make the robot spin even slower is to block one set of wheels while turning the others. This means that your robot is now driving in a slight circle (rather than on-axis), which will make post-processing of data slightly more difficult, but allow you to capture data more reliably.
    - Please quantify and/or use graphs to document that your PID controller works well, and upload a video that shows how your robot turns. 
@@ -56,20 +56,20 @@ You can complete your control in either one of the following ways. If your contr
 
 Below you can see an example of angular speed control, a scan of a hallway, and TOF output plotted over time and in a polar plot.
 
-<p align="center"><img src="./Figs/PID_on_1motors_KP2-KI10.png" width="800"></p>
+<p align="center"><img src="../Figs/PID_on_1motors_KP2-KI10.png" width="800"></p>
 
 
 ### Merge and Plot your readings
 
-Compute the [transformation matrices](/lectures/FastRobots-2-TransformationMatrices.pdf) and convert the measurements from the distance sensor to the inertial reference frame of the room (these will depend on how you mounted your sensors on the robot.) 
+Compute the [transformation matrices](../lectures/FastRobots-2-TransformationMatrices.pdf) and convert the measurements from the distance sensor to the inertial reference frame of the room (these will depend on how you mounted your sensors on the robot.) 
    - Describe the matrices
    - Plot all of your TOF sensor readings in a single plot. Please assign different colors to data sets acquired from each turn. 
 
-<img src="./Figs/Convention.png" width="600">
+<img src="../Figs/Convention.png" width="600">
 
 Below you can see an example of an office scan, with approximate walls drawn on top.
 
-<img src="./Figs/Hallway-Scans-Map.png" width="600">
+<img src="../Figs/Hallway-Scans-Map.png" width="600">
 
 
 ### Convert to Line-Based Map
