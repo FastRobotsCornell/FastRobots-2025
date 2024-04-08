@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](index.md)
+[Return to main page](../index.md)
 
 # Lab 3 Time of Flight Sensors
 

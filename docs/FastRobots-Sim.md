@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](index.md)
+[Return to main page](../index.md)
 
 # Simulation tool used for Labs 10-12
 

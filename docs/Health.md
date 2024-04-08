@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](index.md)
+[Return to main page](../index.md)
 
 While there are no longer pandemic pre-cautions in place, please apply common sense if you or those around are symptomatic. If you have a health-related problem that interferes with class participation or deadlines, please reach out to the teaching team ASAP.
 
