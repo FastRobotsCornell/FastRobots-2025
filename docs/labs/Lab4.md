@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](index.md)
+[Return to main page](../index.md)
 
 # Lab 4: Motors and Open Loop Control
 

@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](index.md)
+[Return to main page](../index.md)
 
 # Simulation tool used for Labs 10-12
 
@@ -48,8 +48,8 @@ sudo apt install libgl1 libegl1 libxkbcommon-x11-0 libxcb-xinerama0 libxcb-curso
 ```
 
 ### Upgrade Python
-This is a reminder to upgrade python (>= 3.9) and pip (>= 21.0).
-> NOTE: You may notice different versions when using `python` and `python3` commands; use the one that has the latest version and use pip in that version of python. For example, if `python3` has the latest version of python on your computer, use pip as `python3 -m pip`. Make sure you use the right python command for all the steps detailed in this documentation.
+This is a reminder to upgrade python (3.10 for Windows/Mac, 3.9 for Linux/WSL) and pip (>= 21.0).
+> NOTE: You may notice different versions when using `python` and `python3` commands; use the one that has the correct version and use pip in that version of python. For example, if `python3` has the latest version of python on your computer, use pip as `python3 -m pip`. Make sure you use the right python command for all the steps detailed in this documentation.
 
 <details>
   <summary><strong>How to check for versions?</strong></summary>
@@ -58,12 +58,12 @@ This is a reminder to upgrade python (>= 3.9) and pip (>= 21.0).
 </details><br>
 
 <ol>
-  <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.9</a></li>
+  <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.10</a></li>
   <li>Install/Upgrade <a href="https://pip.pypa.io/en/stable/installation/#upgrading-pip">pip</a></li>
 </ol>
 
 #### Install Python Dependencies
-If you just upgraded your Python version and used an older version in Lab2, then the virtual environment created in Lab 2 will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab2](Lab2.md) to setup your new virtual environment and reinstall the packages from Lab 2.
+If you just upgraded your Python version and used an older version in Lab2, then the virtual environment created in Lab 2 will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab1](Lab1.md) to setup your new virtual environment and reinstall the packages from Lab 2.
 
 ### Install pip packages
 1. Activate your virtual environment.
@@ -85,8 +85,11 @@ again.
 #### Installing from a pip wheel
 1. Activate your virtual environment.
 2. Download the [pip wheel](https://github.com/CEI-lab/FastRobots-sim-release/releases/tag/v2_3_10) that matches your OS and Python version. For example, MacOS with
-Python 3.9 would download the wheel with ```cp39-macosx```
-in the filename. Remember that WSL uses Linux instructions.
+Python 3.10 would download the wheel with ```cp310-macosx```.
+
+>Note: The python version must match the wheel exactly (newer versions don't work) or else you will get a message of the type: ERROR:&lt;wheel file&gt; is not a supported wheel on this platform.
+
+>Another Note: For Windows users, call different installed versions of python using the command "py -3.x" instead of "python3", so calling python 3.10 is now "py -3.10". Mac/Linux users should call "python3.x" for a similar effect.
 
 3. Install <b>Box2D</b> from pip
   > Replace &lt;wheel file&gt; with the path to the

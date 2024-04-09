@@ -17,3 +17,4 @@
   * [bash/zsh](https://cheatography.com/davechild/cheat-sheets/linux-command-line/)
   * [python](https://www.pythoncheatsheet.org/#Python-Basics)
 * [Labs FAQ](FAQ.md)
+* [DMP Tutorial](dmp.md) (Credit to Stephan Wagner, ECE4160 student Spring 2024)
