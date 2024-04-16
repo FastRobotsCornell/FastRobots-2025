@@ -15,7 +15,7 @@ Please read the following background information and the lab description in its 
 Robot localization is the process of determining where a mobile robot is located with respect to its environment. Plotting odometry against the ground truth in the previous lab should have convinced you that non-probabilistic methods lead to poor results.
 
 #### Grid Localization
-The robot state is 3 dimensional and is given by \displaystyle (x,y,\theta) <img src="https://render.githubusercontent.com/render/math?math=(x,y,\theta)">.
+The robot state is 3 dimensional and is given by $(x,y,\theta)$ <img src="https://render.githubusercontent.com/render/math?math=(x,y,\theta)">.
 The robot's world is a continuous space that spans from:
 - [-1.6764, +1.9812) meters or [-5.5, 6.5) feet in the x direction,
 - [-1.3716, +1.3716) meters or [-4.5, +4.5) feet in the y direction,
