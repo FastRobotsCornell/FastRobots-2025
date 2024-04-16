@@ -95,7 +95,7 @@ loc.bel = loc.bel / np.sum(loc.bel)
 Think about how often you need to do this; every matrix operation takes time.
 
 ##### Odometry Motion Model in the Prediction Step
-In the odometry motion model, any control input `u` can be expressed as a tuple <span><img src="=https://latex.codecogs.com/svg.latex?u \equiv [rot1, trans, rot2]"></span>
+In the odometry motion model, any control input `u` can be expressed as a tuple <span><img src="https://latex.codecogs.com/svg.latex?u%20%5Cequiv%20%5Brot1,%20trans,%20rot2%5D"></span>
 
 The `compute_control` function is expected to extract the control information in the above format given a previous pose (at time `t-1`) and a current pose (at time `t`) of the robot.
 
