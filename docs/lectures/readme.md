@@ -22,10 +22,10 @@ Lecture slides will be uploaded on this page. Recorded lectures are available vi
 * [Lecture 16 - Markov and Bayes Filter I](./FastRobots-16-Markov_BayesFilter1.pdf)
 * [Lecture 17 - Motion models](./FastRobots-17-Motion_models.pdf)
 * [Lecture 18 - Sensor models](./FastRobots-18-SensorModel.pdf)
-
-<!--
 * [Lecture 19 - Bayes Filter II](./FastRobots-19-Markov_BayesFilter2.pdf)
 * [Lecture 20 - Simulator](./FastRobots-20-Simulator.pdf)
+
+<!--
 * [Lecture 21 - Particle Filters and intro to SLAM](FastRobots-21-SLAM.pdf)
 * [Lecture 22 - Ethics I](./FastRobots-22-EthicsI.pdf)
 * [Lectures 23 - Ethics II](FastRobots-23-EthicsII.pdf)
