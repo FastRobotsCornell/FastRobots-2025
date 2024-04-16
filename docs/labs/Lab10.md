@@ -107,23 +107,23 @@ Now, we have the `actual_u` and a `u` for a pair of possible previous and curren
 
 <p align="center"><img src="../Figs/odom_equation.gif" width=450></p>
 
-where, `gaussian` is a function defined in **localization.py**, `odom_rot_noise` and `odom_trans_noise` are variables defined in **localization.py**, and <span><img src="https://render.githubusercontent.com/render/math?math=p({x}_{t}|{u}_{t},{x}_{t-1})"></span> is the transitional probability of a robot from a previous state <span><img src="https://render.githubusercontent.com/render/math?math={x}_{t-1}"></span> to the current state <span><img src="https://render.githubusercontent.com/render/math?math={x}_{t}"></span> given the current input <span><img src="https://render.githubusercontent.com/render/math?math={u}_{t}"></span>. The above equation is essentially what the function `odom_motion_model(cur_pose, prev_pose, u)` should implement.
+where, `gaussian` is a function defined in **localization.py**, `odom_rot_noise` and `odom_trans_noise` are variables defined in **localization.py**, and <span><img src="https://latex.codecogs.com/svg.latex?p({x}_{t}|{u}_{t},{x}_{t-1})"></span> is the transitional probability of a robot from a previous state <span><img src="https://latex.codecogs.com/svg.latex?{x}_{t-1}"></span> to the current state <span><img src="https://latex.codecogs.com/svg.latex?{x}_{t}"></span> given the current input <span><img src="https://latex.codecogs.com/svg.latex?{u}_{t}"></span>. The above equation is essentially what the function `odom_motion_model(cur_pose, prev_pose, u)` should implement.
 
-All the quantities in the RHS (Right Hand Side) of the above equation is known, and thus you can calculate the transition probability <span><img src="https://render.githubusercontent.com/render/math?math=p({x}_{t}|{u}_{t},{x}_{t-1})"></span> which is the only unknown quantity in the prediction step of the Bayes Filter. Repeat this for every possible pair of previous and current poses (the first line of the Bayes Filter algorithm) to complete the prediction step.
+All the quantities in the RHS (Right Hand Side) of the above equation is known, and thus you can calculate the transition probability <span><img src="https://latex.codecogs.com/svg.latex?p({x}_{t}|{u}_{t},{x}_{t-1})"></span> which is the only unknown quantity in the prediction step of the Bayes Filter. Repeat this for every possible pair of previous and current poses (the first line of the Bayes Filter algorithm) to complete the prediction step.
 
 ##### Sensor Model with multiple individual measurements
-Each measurement <img src="https://render.githubusercontent.com/render/math?math=z_{t}"> consists of 18 different individual measurements <img src="https://render.githubusercontent.com/render/math?math=z^{1}_{t}, z^{2}_{t}, ...., z^{18}_{t}"> recorded at equidistant angular positions during the robot's (anti-clockwise) rotation behavior. The 18 true measurements values are recorded at the same equidistant angular positions for each grid cell (state) and is available through the **Mapper** class. Therefore, each index of the member variable array **obs_views** (of class **Mapper**) is the true individual measurement of the corresponding index of the member variable array **obs_range_data** (of class **BaseLocalization**). You do not need to use **obs_bearing_data** in your bayes filter implementation.
+Each measurement <img src="https://latex.codecogs.com/svg.latex?z_{t}"> consists of 18 different individual measurements <img src="https://latex.codecogs.com/svg.latex?z^{1}_{t}, z^{2}_{t}, ...., z^{18}_{t}"> recorded at equidistant angular positions during the robot's (anti-clockwise) rotation behavior. The 18 true measurements values are recorded at the same equidistant angular positions for each grid cell (state) and is available through the **Mapper** class. Therefore, each index of the member variable array **obs_views** (of class **Mapper**) is the true individual measurement of the corresponding index of the member variable array **obs_range_data** (of class **BaseLocalization**). You do not need to use **obs_bearing_data** in your bayes filter implementation.
 
 You will need to find the likelihood of the 18 measurements given a state i.e.
 
-<p align="center"><img src="https://render.githubusercontent.com/render/math?math=p(z_{t}|x_{t},m) = \prod_{k=1}^{18} p(z^{k}_{t}|x_{t}, m)" width=300></p>
+<p align="center"><img src="https://latex.codecogs.com/svg.latex?p(z_{t}|x_{t},m) = \prod_{k=1}^{18} p(z^{k}_{t}|x_{t}, m)" width=300></p>
 
 In the above equation, we assume that individual measurements are independent given the robot state. 
 
 ##### Normalizing your angles
 The third dimension of the grid represents the orientation (yaw) in the range \[-180,+180\) degrees. When dealing with angles in your bayes filter (for example in calculating rotation1 and rotation2 in the odom motion model), you need to make sure the final angles are in the above range.
 
-Think about what happens when you use a Gaussian to model a rotation of 350 degrees where the true value is -10 degrees and standard deviation is 20 degrees. <img src="https://render.githubusercontent.com/render/math?math=\mathcal{N}(350|\mu=-10,\sigma=20)"> is highly unlikely though 350 degrees is equivalent to -10 degrees. 
+Think about what happens when you use a Gaussian to model a rotation of 350 degrees where the true value is -10 degrees and standard deviation is 20 degrees. <img src="https://latex.codecogs.com/svg.latex?\mathcal{N}(350|\mu=-10,\sigma=20)"> is highly unlikely though 350 degrees is equivalent to -10 degrees. 
 
 Use the function **normalize_angle** from class **Mapper** to normalize your angles when necessary.
 
