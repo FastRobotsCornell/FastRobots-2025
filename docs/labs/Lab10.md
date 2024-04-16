@@ -34,24 +34,24 @@ The grid cells are identical in size. The size of each grid cell (i.e resolution
 ##### 3D Grid Visual Example
 The image below depicts an example of a 3D grid with (20,20,18) cells.
 
-<p align="center"><img src="./Figs/3d_grid.jpg" width="800"></p>
+<p align="center"><img src="../Figs/3d_grid.jpg" width="800"></p>
 
 The robot is initialized with a point mass distribution at (0,0,0) which translates to the grid cell index (10, 10, 9). This can be calculated using the grid resolution, grid size, and the fact that indices start from 0. The initial probability at the grid cell index (10, 10, 9) is 1.0 and every other cell has a value of 0. The green cell depicts the grid cell index (10, 10, 9). The top, middle and bottom x-y grid planes depict all the discrete robot states where the third index is 0, 9 and 17, respectively.
 
 #### Sensor Model
-We utilize a Gaussian Distribution to model the measurement noise. This can be thought of as a simplified version of the Beam model where we ignore the remaining three distributions used to model failures, unexpected objects, and random measurements. This simplified model works surprisingly well for laser range finders operating in static, indoor environments. Refer [lecture 18](lectures/FastRobots-18-SensorModel.pdf).
+We utilize a Gaussian Distribution to model the measurement noise. This can be thought of as a simplified version of the Beam model where we ignore the remaining three distributions used to model failures, unexpected objects, and random measurements. This simplified model works surprisingly well for laser range finders operating in static, indoor environments. Refer [lecture 18](../lectures/FastRobots-18-SensorModel.pdf).
 
 #### Motion Model
 You should utilize the odometry motion model for this lab. At every time step, we can record the odometry data before and after the movement.
 This relative odometry information can be described by the motion parameters: `rotation1, translation and rotation2`. 
-You can use the Gaussian Distribution to model the noisy control data in the odometry motion model. Refer [lecture 17](lectures/FastRobots-17-Motion_models.pdf).
+You can use the Gaussian Distribution to model the noisy control data in the odometry motion model. Refer [lecture 17](../lectures/FastRobots-17-Motion_models.pdf).
 
 #### Bayes Filter Algorithm
 Essentially, every iteration of the Bayes filter has two steps: 
    -  A prediction step to incorporate the control input (movement) data
    -  An update step to incorporate the observation (measurement) data
 
-The prediction step increases uncertainty in the **belief** while the update step reduces uncertainty. The belief calculated after the prediction step is often referred to as **prior belief**. Refer [lecture 16](lectures/FastRobots-16-Markov_BayesFilter1.pdf) and [lecture 17](lectures/FastRobots-17-Motion_models.pdf).
+The prediction step increases uncertainty in the **belief** while the update step reduces uncertainty. The belief calculated after the prediction step is often referred to as **prior belief**. Refer [lecture 16](../lectures/FastRobots-16-Markov_BayesFilter1.pdf) and [lecture 17](../lectures/FastRobots-17-Motion_models.pdf).
 
 ---
 
@@ -105,7 +105,7 @@ Now that you have the `actual_u`, you need to incorporate the effects of this mo
 
 Now, we have the `actual_u` and a `u` for a pair of possible previous and current poses of the robot. We can "plug" these into a Gaussian function to see how "probable" is the transition of the robot state from `prev_pose` to `current_pose` given the actual control action is `actual_u`. 
 
-<p align="center"><img src="Figs/odom_equation.gif" width=450></p>
+<p align="center"><img src="../Figs/odom_equation.gif" width=450></p>
 
 where, `gaussian` is a function defined in **localization.py**, `odom_rot_noise` and `odom_trans_noise` are variables defined in **localization.py**, and <span><img src="https://render.githubusercontent.com/render/math?math=p({x}_{t}|{u}_{t},{x}_{t-1})"></span> is the transitional probability of a robot from a previous state <span><img src="https://render.githubusercontent.com/render/math?math={x}_{t-1}"></span> to the current state <span><img src="https://render.githubusercontent.com/render/math?math={x}_{t}"></span> given the current input <span><img src="https://render.githubusercontent.com/render/math?math={u}_{t}"></span>. The above equation is essentially what the function `odom_motion_model(cur_pose, prev_pose, u)` should implement.
 
