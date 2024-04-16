@@ -16,7 +16,6 @@ Robot localization is the process of determining where a mobile robot is located
 
 #### Grid Localization
 The robot state is 3 dimensional and is given by <img src="https://latex.codecogs.com/svg.latex?\(x,y,\theta)">.
-The robot state is 3 dimensional and is given by <img src="https://latex.codecogs.com/svg.latex?\(x,y,\theta)">.
 The robot's world is a continuous space that spans from:
 - [-1.6764, +1.9812) meters or [-5.5, 6.5) feet in the x direction,
 - [-1.3716, +1.3716) meters or [-4.5, +4.5) feet in the y direction,
@@ -27,7 +26,7 @@ The robot's world is a continuous space that spans from:
     We are using the floor tiles in the lab for discretization and each tile is 1 feet. It helps with visually tracking the discretized robot pose. All the quantities in the simulation base code are expressed in S.I. units, unless stated otherwise.
 </details><br>
 
-There are infinitely many poses the robot can be at within this bounded space. We thus discretize the continuous state space into a finite 3D grid space, where the three axes represent <img src="https://render.githubusercontent.com/render/math?math=x">, <img src="https://render.githubusercontent.com/render/math?math=y"> and <img src="https://render.githubusercontent.com/render/math?math=\theta">. This reduces the accuracy of the estimated state as we cannot distinguish between robot states within the same grid cell, but allows us to compute the belief over a finite set of states in reasonable time.
+There are infinitely many poses the robot can be at within this bounded space. We thus discretize the continuous state space into a finite 3D grid space, where the three axes represent <img src="https://latex.codecogs.com/svg.latex?\x">, <img src="https://latex.codecogs.com/svg.latex?\y"> and <img src="https://latex.codecogs.com/svg.latex?\\theta">. This reduces the accuracy of the estimated state as we cannot distinguish between robot states within the same grid cell, but allows us to compute the belief over a finite set of states in reasonable time.
 
 The grid cells are identical in size. The size of each grid cell (i.e resolution of the grid) along the <img src="https://render.githubusercontent.com/render/math?math=x">, <img src="https://render.githubusercontent.com/render/math?math=y"> and <img src="https://render.githubusercontent.com/render/math?math=\theta"> axes are  0.3048 m, 0.3048 meters and 20 degrees, respectively. The total number of cells along each axis are (12,9,18). Each grid cell stores the probability of the robot's presence at that cell. The belief of the robot is therefore represented by the set of probabilities of each grid cell and these probabilities should sum to 1. The Bayes filter algorithm updates the probability of the robot’s presence in each grid cell as it progresses. The grid cell(s) with the highest probability (after each iteration of the bayes filter) represents the most probable pose of the robot. Thus the most probable cell across different time steps characterizes the robot’s trajectory.
 
