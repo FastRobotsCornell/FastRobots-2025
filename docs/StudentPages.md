@@ -30,7 +30,7 @@
 * [Minh Nguyen](https://miniminh138.github.io/ECE4160/)
 * [Kofi Ohene Adu](https://kaylam60.github.io/Fast-Robots/)
 * [Haocheng Peng](https://haocheng-peng.github.io/)
-* [Yiyan Peng](missing)
+* [Yiyan Peng](https://666harrypeng.github.io/)
 * [Syed Askari Raza](https://askari-raza.github.io/FastRobotsAskari/)
 * [Gabriel Seger](https://segergabriel.github.io/FastRobots/)
 * [Nidhi Sonwalkar](https://ns14.github.io/)
