@@ -15,13 +15,13 @@ The purpose of this lab is to equip the robot with sensors - the faster the robo
 * 2 x [Qwiic connector](https://www.sparkfun.com/products/14426)
 * 1 x Ruler or graph paper
 
-### Prelab
+## Prelab
 
 In this lab, we will setup a Time-of-Flight (ToF) sensor, which is based on the VL53L1X. Please skim the [manual](https://cdn.sparkfun.com/assets/e/1/8/4/e/VL53L1X_API.pdf), and check out the [datasheet](https://cdn.sparkfun.com/assets/8/9/9/a/6/VL53L0X_DS.pdf) before beginning this lab. Note the sensor I2C address.
 
 Eventually, we will use two ToF sensors. The address of the sensor is hardwired on the board which means you cannot (as is) address the two sensors individually. You can change the address programmatically (while powered) or you can enable the two sensors separately through their shutdown pins. Decide and argue for which approach you want to use (and how you will do this). Given their range and angular sensitivity, think about where you will place them on your robot to best detect obstacles in future labs. Discuss scenarios where your robot will miss obstacles. 
 
-To help you get through the lab, consider installing [SerialPlot](https://hackaday.io/project/5334-serialplot-realtime-plotting-software) to help visualize your data.
+To help you get through the lab, consider using SerialPlot in the Arduino IDE to help visualize the data.
 
 ***Think ahead!***
 
@@ -34,12 +34,12 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 ## Instructions
 
 1. Power up your Artemis with a battery!
-    - You will need a JST connector and a battery. 
-    - Cut the wires on your battery **one at a time**. Cutting both wires at the same time will short the terminals and distroy your battery. If you do short your battery, please inform one of the TAs.
+    - You will need a JST connector and one of the 650mAh batteries from your RC car. 
+    - Separate the wires on your battery and cut them **one at a time**. Cutting both wires at the same time will short the terminals and destroy your battery. If you do short your battery, please inform one of the TAs.
     - Solder the battery wires to the JST jumper wires. If you are unsure how to do this, please ask one of the TAs.
-    - **Use heat shrink** to insulate the exposed protion of wire. Electrical tape can fall off over time and leave a sticky residue on your robot.
-    - Check the polarity of these wires (positive on the battery should be connected to the positive terminal on your Artemis).
-    - Power up your Artemis without using the USB C port. Try sending BLE messages back and forth from your laptop to ensure that the Artemis is powered on correctly and can send messages completely untethered.
+    - **Use heat shrink** to insulate the exposed portion of wire. Electrical tape can fall off over time and leave a sticky residue on your robot.
+    - Check the polarity of these wires (positive on the battery should be connected to the positive terminal on your Artemis -- this may mean that you need to connect opposite color wires).
+    - Power up your Artemis using only the battery and no connection through the USB C port. Try sending BLE messages back and forth from your laptop to ensure that the Artemis is powered on correctly and can send messages completely untethered.
 
 2. Using the Arduino library manager, install the SparkFun VL53L1X 4m laser distance sensor library.
 
@@ -68,20 +68,22 @@ While you can choose to ignore the robot in this lab, you will have to permanent
    - The figure below is an example from 2020, when students measured the accuracy and repeatability in different lighting conditions, and timing for various code setups (these are not all required tasks for this year), however, we highly recommend generating your plots in the Jupyter notebook to gain more familiarity with the environment, e.g. using [matplotlib](https://matplotlib.org/).    
    <p align="center"><img src="../Figs/ToF_characterization.png" width="700"></p>
 
-8. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both works. 
-   - Fyi, don't use the Example1_wire code to do this, it works poorly when multiple sensors are attached.  
+8. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both work. 
+   - Don't use the Example1_wire code to do this, it works poorly when multiple sensors are attached.  
 
 9. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when available.
-   - Fyi, the distanceSensor.checkForDataReady() routine can be called to check when new data is available.
+   - The distanceSensor.checkForDataReady() routine can be called to check when new data is available.
    - How fast does your loop execute, and what is the current limiting factor?
 
-10. Finally, edit your work from Lab 2, such that you can record time-stamped ToF data for a set period of time, and then send it over Bluetooth to your computer.
-   - It will be helpful in future labs, if you also write a function in Jupyter to plot the data on a graph with time (us or ms for example) on the x-axis and ToF data on the y-axis. 
+10. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data for a set period of time, and then send it over Bluetooth to your computer.
+    
+11. Include a plot of the ToF data against time. 
+   
 
 
 ### Additional tasks for 5000-level students:
 
-1. Many distance sensors are based on infrared trasmission. 
+12. Many distance sensors are based on infrared trasmission. 
    - Discuss a couple, highlight the differences in their fuctionality and the pros/cons of each. 
    - Check and discuss whether the ToF sensor is sensitive to different colors and textures. 
 
