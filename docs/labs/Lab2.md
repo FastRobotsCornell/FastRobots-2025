@@ -40,7 +40,8 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
 ### Accelerometer
 
 1. Use the equations from class to convert accelerometer data into pitch and roll. To use atan2 and M_PI, you have to include the math.h library. 
-   - Show the output at {-90, 0, 90} degrees pitch and roll. Hint: You can use the surface and edges of your table as guides to ensure 90 degree tilt/roll.  
+   - Show the output at {-90, 0, 90} degrees pitch and roll. Hint: You can use the surface and edges of your table as guides to ensure 90 degree tilt/roll.
+   - It will be helpful in future labs if you also write a function in Jupyter to plot the data on a graph with time (us or ms for example) on the x-axis and data on the y-axis. 
    - How accurate is your accelerometer? You may want to do a two-point calibration (i.e., measure the output at either end of the range, and calculate the conversion factor such that the final output matches the expected output). 
 2. The accelerometer is noisy, especially when you run the RC car in its proximity. Record some of this data, and analyze the noise in the frequency spectrum. 
    - Here's a helpful tutorial to do a [Fourier Transform in Python](https://alphabold.com/fourier-transform-in-python-vibration-analysis/)
