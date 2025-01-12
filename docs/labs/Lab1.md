@@ -6,17 +6,17 @@
 # Lab 1: The Artemis board and Bluetooth
 This lab is divided into two parts, Lab 1A, which covers the Arduino IDE and programming the Artemis board, and Lab 1B, which covers Bluetooth connectivity and using Jupyter Lab notebooks. The lab will span two weeks, but you must attend the first lab session to obtain your electronics kit.
 
-# Lab 1A
-
-## Objective
-The purpose of Lab 1A is for you to setup and become familiar with the Arduino IDE and the Artemis board. After this lab, you should be comfortable programming your board, using the board LED, reading/writing serial messages over USB, and using the onboard temperature sensor and Pulse Density Microphone.
-
 ## Parts Required
 
 (These will be handed out during the first lab session - note if you decide to drop the class please give these back to a TA.)
 
-* 1 x SparkFun RedBoard Artemis Nano
-* 1 x USB C-to-C or A-to-C cable
+* 1 x [SparkFun RedBoard Artemis Nano](https://www.sparkfun.com/products/15443)
+* 1 x [USB cable](https://www.amazon.com/SUMPK-Charging-Braided-Compatible-Samsung/dp/B08R68T84N/ref=sr_1_4?keywords=usb+c+to+c&qid=1636380583&qsid=147-6677549-1776715&refinements=p_n_feature_ten_browse-bin%3A23555327011&rnid=23555276011&s=pc&sr=1-4&sres=B08D9SB161%2CB08R68T84N%2CB01CZVEUIE%2CB01FM51812%2CB07VCZV3R4%2CB075V68NVR%2CB075GMKZWW%2CB093BVBRJT%2CB09BBBJ33F%2CB09C2D9Z7T%2CB012V56D2A%2CB092CYFQMP%2CB081L4V3DN%2CB07Y6ZJT1D%2CB07Y2XKPX5%2CB07VPYJV8V%2CB07THJGZ9Z%2CB08W2TP2TT%2CB0744BKDRD%2CB07THFJ1J5&srpt=ELECTRONIC_CABLE)
+
+# Lab 1A
+
+## Objective
+The purpose of Lab 1A is for you to setup and become familiar with the Arduino IDE and the Artemis board. After this lab, you should be comfortable programming your board, using the board LED, reading/writing serial messages over USB, and using the onboard temperature sensor and Pulse Density Microphone.
 
 ## Prelab
 Install the [Arduino IDE](https://www.arduino.cc/en/main/software) on your computer. Please use the latest versions of ArduinoIDE and Sparkfun Appollo3 support software. Update them if necessary. If you have any issues, please contact the TA team.
