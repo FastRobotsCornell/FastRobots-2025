@@ -8,18 +8,18 @@ This grading policy is preliminary and may change throughout the semester.
 
 | Task                                                          |   pts   |
 |---------------------------------------------------------------|---------|
-| Lab 1 Artemis                                                 |       5 |
-| Lab 2 Bluetooth                                               |       5 | 
-| Lab 3 ToF Sensors                                             |     7.5 |  
-| Lab 4 IMU Sensors                                             |     7.5 |
-| Lab 5 Motor driver, open loop control                         |     7.5 | 
-| Lab 6 PID                                                     |     7.5 | 
+| Lab 1 Artemis + Bluetooth                                     |       5 |
+| Lab 2 ToF Sensors                                             |     7.5 | 
+| Lab 3 IMU Sensors                                             |     7.5 |  
+| Lab 4 Motor driver, Open Loop Control                         |     7.5 |
+| Lab 5 PID Linear Control                                      |     7.5 | 
+| Lab 6 PID Orientation Control                                 |     7.5 | 
 | Lab 7 KF                                                      |     7.5 | 
 | Lab 8 Stunts                                                  |      10 | 
 | Lab 9 Mapping                                                 |     7.5 |
 | Lab 10 Localization (sim)                                     |     U/S | 
 | Lab 11 Localization (real)                                    |      10 | 
-| Lab 12 Planning and Execution                                 |      15 |  
+| Lab 12 Planning and Execution                                 |    12.5 |  
 | Participation                                                 |      10 |
 | Bonus points for completing entry and exit surveys            |       2 |
 | **Total:**                                                    | **102** |
@@ -41,4 +41,4 @@ We typically receive most questions regarding the documentation. Here are some g
 
 ### Slip days
 
-All students will be allowed two one-week extensions, which can be applied to any lab. Details to follow. 
+All students will be allowed two one-week extensions, which can be applied to any two labs. Details to follow. 
