@@ -14,6 +14,8 @@ The purpose of this lab is to equip the robot with distance sensors - the faster
 * 1 x [QWIIC Breakout board](https://www.sparkfun.com/products/18012) 
 * 2 x [Qwiic connector](https://www.sparkfun.com/products/14426)
 * 1 x Ruler or graph paper
+* 1 x Wire strippers/ Mini cutters
+* 1 x Soldering iron
 
 ## Prelab
 
