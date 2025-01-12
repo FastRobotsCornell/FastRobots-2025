@@ -171,7 +171,7 @@ Download and unzip the [codebase](./ble_robot_1.2.zip) into your project directo
 <!--2. Copy the ```ble_python``` directory into your project directory.-->
 
 ```
-ble_robot-1.1
+ble_robot_1.2
 ├── ble_arduino
 |   ├── ble_arduino.ino - Arduino code that will be compiled and run on the Artemis board
 |   ├── BLECStringCharacteristic.h - class definition used to send and receive data
