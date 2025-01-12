@@ -2,10 +2,10 @@
 
 [Return to main page](../index.md)
 
-# Lab 3 Time of Flight Sensors
+# Lab 3: Time of Flight Sensors
 
 ## Objective
-The purpose of this lab is to equip the robot with sensors - the faster the robot can sample and the more it can trust a sensor reading, the faster it is able to drive. 
+The purpose of this lab is to equip the robot with distance sensors - the faster the robot can sample and the more it can trust a sensor reading, the faster it is able to drive. 
 
 ## Parts Required
 * 1 x [SparkFun RedBoard Artemis Nano](https://www.sparkfun.com/products/15443)
