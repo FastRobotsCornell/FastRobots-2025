@@ -12,12 +12,12 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 
 ## Info
 * Instructor: [E. Farrell Helbling](./TeachingTeam/readme.md) (efh45@cornell.edu)
-* Teaching Team: [Harry Gao, Cameron Urban, Mikayla Lahr, Daria Kot](./TeachingTeam/readme.md)
-* Class hours: Tuesday-Thursday 11:40am-12:55pm
-* Location: TBD
-* Lab hours: T 2:00-4:30pm, W 8:30-11:00am, W 2:00-4:30pm
-* Location: Phillips 427
-* Canvas: Lecture notes and grades will be facilitated through Canvas
+* Teaching Team: [Harry Gao, Cameron Urban, Mikayla Lahr, Daria Kot, Cheney Zhang, Nandita Nagarajan](./TeachingTeam/readme.md)
+* Class Hours: Tuesday-Thursday 11:40am-12:55pm
+* Class Location: Hollister 110
+* Lab Hours: T 2:00-4:30pm, W 8:30-11:00am, W 2:00-4:30pm
+* Lab Location: Phillips 427
+* Canvas: Assignment dates and grades will be facilitated through Canvas
 * EdDiscussion: The online discussion forum can be accessed through Canvas
 
 ---
@@ -30,6 +30,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * [Lab kit](./BOM.md)
 * [Making your own Github repository and page](./tutorials/webpage_help.md)
 * [Tutorials and Helpful Resources](./tutorials/Readme.md)
+* [Website for 2024 offering](https://fastrobotscornell.github.io/FastRobots2024/))
 * [Website for 2023 offering](https://cei-lab.github.io/FastRobots-2023/)
 * [Website for 2022 offering](https://cei-lab.github.io/ECE4960-2022/)
 * [Website for 2020 offering](https://cei-lab.github.io/ECE4960-2020/)
