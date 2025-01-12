@@ -11,8 +11,8 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 ---
 
 ## Info
-* Instructor: [E. Farrell Helbling](./TeachingTeam/readme.md) (efh45@cornell.edu)
-* Teaching Team: [Harry Gao, Cameron Urban, Mikayla Lahr, Daria Kot, Cheney Zhang, Nandita Nagarajan](./TeachingTeam/readme.md)
+* Instructor: E. Farrell Helbling<!--(./TeachingTeam/readme.md) (efh45@cornell.edu)-->
+* Teaching Team: Harry Gao, Cameron Urban, Mikayla Lahr, Daria Kot, Cheney Zhang, Nandita Nagarajan<!--(./TeachingTeam/readme.md)-->
 * Class Hours: Tuesday-Thursday 11:40am-12:55pm
 * Class Location: Hollister 110
 * Lab Hours: T 2:00-4:30pm, W 8:30-11:00am, W 2:00-4:30pm
