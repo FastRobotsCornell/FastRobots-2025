@@ -30,7 +30,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * [Lab kit](./BOM.md)
 * [Making your own Github repository and page](./tutorials/webpage_help.md)
 * [Tutorials and Helpful Resources](./tutorials/Readme.md)
-* [Website for 2024 offering](https://fastrobotscornell.github.io/FastRobots2024/))
+* [Website for 2024 offering](https://fastrobotscornell.github.io/FastRobots2024/)
 * [Website for 2023 offering](https://cei-lab.github.io/FastRobots-2023/)
 * [Website for 2022 offering](https://cei-lab.github.io/ECE4960-2022/)
 * [Website for 2020 offering](https://cei-lab.github.io/ECE4960-2020/)
