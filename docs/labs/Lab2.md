@@ -16,7 +16,7 @@ The purpose of this lab is to add the IMU to your robot, start running the Artem
 
 ## Prelab
 
-Please read up on the IMU. This year, we're using the [Sparkfun](https://www.sparkfun.com/products/15335) breakout board. Review the documentation for a quick overview of the functionality, and their [software library](https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary) works well. The ICM-20948 datasheet can be found [here](https://cdn.sparkfun.com/assets/7/f/e/c/d/DS-000189-ICM-20948-v1.3.pdf). 
+Please read up on the IMU. This year, we're using the [Sparkfun](https://www.sparkfun.com/products/15335) breakout board. There is a quick overview of the functionality, and their [software library](https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary) works well. The ICM-20948 datasheet can be found [here](https://cdn.sparkfun.com/assets/7/f/e/c/d/DS-000189-ICM-20948-v1.3.pdf). 
 
 <img src="../Figs/ICM-20948_datasheet.png" width="600">
 
@@ -30,7 +30,7 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
  
 ### Setup the IMU
 
-1. Install the "SparkFun 9DOF IMU Breakout_ICM 20948_Arduino Library" for Arduino Library Manager.
+1. Install the "SparkFun 9DOF IMU Breakout_ICM 20948_Arduino Library" from the Arduino Library Manager.
 2. Connect the IMU to the Artemis board using the QWIIC connectors.
 3. Run the "..\Arduino\libraries\SparkFun_ICM-20948\SparkFun_ICM-20948_ArduinoLibrary-master\examples\Arduino\Example1_Basics". 
    - Note the AD0_VAL definition. What does it represent, and should it be 0 or 1?
@@ -44,20 +44,19 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
    - How accurate is your accelerometer? You may want to do a two-point calibration (i.e., measure the output at either end of the range, and calculate the conversion factor such that the final output matches the expected output). 
 2. The accelerometer is noisy, especially when you run the RC car in its proximity. Record some of this data, and analyze the noise in the frequency spectrum. 
    - Here's a helpful tutorial to do a [Fourier Transform in Python](https://alphabold.com/fourier-transform-in-python-vibration-analysis/)
-   - Use this analysis to guide your choice of a complimentary low pass filter cut off frequency (recall implementation details from the [lecture](../lectures/FastRobots-4-IMU.pdf)). Discuss how the choice of cut off frequency affects the output.
-   - If there's little noise, check out the information on the chip and reason about why that might be. (Note, this may differ between kits)
-3. Include a graph of Fourier Transform of your accelerometer data. Reason about what a good cutoff frequency is. 
-   - Think about the sample rate of your accelerometer.
-   - Try inducing vibrational noice by setting your IMU on the lable and hitting the table (gently) with your hand or a text book. (Just enough to vibrate the table)
+3. Include a graph of Fourier Transform of your accelerometer data. Reason about what a good cutoff frequency is.
+   - Use this analysis to guide your choice of a low pass filter cut off frequency (recall implementation details from the [lecture](../lectures/FastRobots-4-IMU.pdf)). Discuss how the choice of cut-off frequency affects the output.
+   - If there's little noise, check out the information on the chip and reason about why that might be. (Note, this may differ between kits).
+   - Try inducing vibrational noice by setting your IMU on the lable and hitting the table (gently) with your hand or a text book. (Just enough to vibrate the table).
 4. Implement a simple lowpass filter on your accelerometer data.
-   - Demonstrate (graph) the original signal vs the low pass filter. 
+   - Demonstrate (graph) the original signal and the filtered signal. 
    
 ### Gyroscope
 
 1. Use the equations from class to compute pitch, roll, and yaw angles from the gyroscope. 
    - Compare your output to the pitch, roll, and yaw values from the accelerometer and the filtered response. Describe how they differ.
    - Try adjusting the sampling frequency to see how it changes the accuracy of your estimated angles.
-2. Use a complimentary filter to compute an estimate of pitch and roll which is both accurate and stable. Demonstrate its working range and accuracy, and that it is not susceptible to drift or quick vibrations.
+2. Use a complementary filter to compute an estimate of pitch and roll which is both accurate and stable. Demonstrate its working range and accuracy, and that it is not susceptible to drift or quick vibrations.
 
 ### Sample Data
 
@@ -90,17 +89,17 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
 
 ### Record a stunt!
 
-5. Mount the 850mAh battery in the RC car. Note that the standard plug on the 850mAh battery can be attached in either orientation, so *be careful* to plug it in in the right orientation (red-to-red and black-to-black wire). Add AA batteries to the remote control.
-6. Spend 5min playing around with the car (in the hallway or outside). Try to get a feel for how slow/fast it can drive forwards/backwards/turn, accelerations, etc. Record a video to show what you have tried, and discuss what you observe. This will help you establish a baseline for what you expect to see if everything works when you are running the car autonomously. 
+5. Mount the battery in the RC car. Note that the standard plug on the battery can be attached in either orientation, so *be careful* to plug it in in the right orientation (red-to-red and black-to-black). Add AA batteries to the remote control.
+6. Spend 5 minutes playing around with the car (in the hallway or outside). Try to get a feel for how slow/fast it can drive forwards/backwards/turn, accelerations, etc. Record a video to show what you have tried, and discuss what you observe. This will help you establish a baseline for what you expect to see if everything works when you are running the car autonomously. 
 
 
 ### Pack up
 
 7. Don't forget to disconnect your batteries from the robot.
-   - From this point onwards, always show up to the lab section with charged batteries. You can charge the 650mAh battery through USB using the Artemis board's built-in charger, and the 850mAh battery in one of the many chargers in the lab.
-   - You can take one of the 850mAh batteries home with you. Please leave the rest in the lab for everyone to share.
+   - From this point onwards, always show up to the lab section with charged batteries. You can charge the 650mAh battery through the provided USB cable (for now), and the 850mAh battery in one of the many chargers in the lab.
+   - You have one 850mAh battery in your kit to take home with you. There will always be a few batteries in lab charged for everyone to share.
    - *If you have used one of the shared 850mAh batteries, please plug it into the lab chargers before you leave!* 
-8. If you're done playing with your RC car, please also take out the AA batteries from the remote control and hand them back to the TAs so we can use them for following labs. Starting lab 5, we will no longer use the remote control.
+8. If you're done playing with your RC car, please also take out the AA batteries from the remote control and hand them back to the TAs so we can use them for following labs. Starting in Lab 4, we will no longer use the remote control.
 
 ## Additional Tasks for 5000-level students
 
@@ -136,7 +135,5 @@ This is not a strict requirement, but may be helpful in understanding what shoul
      * Demonstrate 5s of ToF and IMU data sent over Bluetooth
    * Record a Stunt
       * Include a video (or some videos) of you playing with the car and discuss your observations
-        * Without Artemis
-        * With Artemis, and plot data sent over Bluetooth
 
 Add code (consider using [GitHub Gists](https://gist.github.com)) where you think is relevant (DO NOT paste your entire code).
