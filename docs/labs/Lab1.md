@@ -48,9 +48,6 @@ Finally, please skim the lab instructions in order to be prepared for what to do
 
 6. Program the board to blink an LED when you play a musical "C" note over the speaker, and off otherwise. Use your phone, computer, or similar to generate the sound. If you're having fun you could even combine the microphone and the Serial output to generate an electronic tuner.
 
-
-
-
 # Lab 1B
 
 ## Objective
@@ -95,15 +92,16 @@ You will need to install Python 3 and pip. If you already have them installed, p
 </div>
 
 <div id="M1" class="tabcontent 1">
-  <p><strong>Minimum Requirements: macOS 12.0 </strong></p>
+  <p><strong>Recommended OS: macOS 12.0 </strong></p>
   <blockquote>
-      <p>It may work with (some) older versions. </p>
+      <p>It may work with (some) older versions. If you have issues with older versions, contact the teaching team. We will try out best to help you.</p>
   </blockquote>
   <ol>
     <li>Open a terminal and run the command: <code class="language-plaintext highlighter-rouge">python3</code>.</li>
     <li>This should bring up a xcode dialog box asking you to install the necessary software.</li>
   </ol>
 </div>
+
 
 [[Relevant xkcd]](https://xkcd.com/1654/)
 
