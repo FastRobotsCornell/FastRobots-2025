@@ -4,13 +4,16 @@
 
 
 # Lab 1: The Artemis board and Bluetooth
+This lab is divided into two parts, Lab 1A, which covers the Arduino IDE and programming the Artemis board, and Lab 1B, which covers Bluetooth connectivity and using Jupyter Lab notebooks. The lab will span two weeks, but you must attend the first lab session to obtain your electronics kit.
 
-## Part 1) Objective
-The purpose of this part of the lab is for you to setup and become familiar with the Arduino IDE and the Artemis board. After this lab, you should be comfortable programming your board, using the board LED, reading/writing serial messages over USB, and using the onboard temperature sensor and Pulse Density Microphone.
+# Lab 1A
+
+## Objective
+The purpose of Lab 1A is for you to setup and become familiar with the Arduino IDE and the Artemis board. After this lab, you should be comfortable programming your board, using the board LED, reading/writing serial messages over USB, and using the onboard temperature sensor and Pulse Density Microphone.
 
 ## Parts Required
 
-(These will be handed out during lab 1 - note if you decide to drop the class please give these back to a TA.)
+(These will be handed out during the first lab session - note if you decide to drop the class please give these back to a TA.)
 
 * 1 x SparkFun RedBoard Artemis Nano
 * 1 x USB C-to-C or A-to-C cable
@@ -21,34 +24,38 @@ While we only guarantee TA support on the lab computers this semester, you can l
    
 Check out the Artemis description, features, and helpful forums here:
 1. [SparkFun RedBoard Artemis Nano](https://www.sparkfun.com/products/15443). *Note that this is a 3V board, NOT 5V, but 3V. Please. Remember. 3V. Inputs. Only.*
-2. [Setup instructions](https://learn.sparkfun.com/tutorials/artemis-development-with-arduino?_ga=2.30055167.1151850962.1594648676-1889762036.1574524297&_gac=1.19903818.1593457111.Cj0KCQjwoub3BRC6ARIsABGhnyahkG7hU2v-0bSiAeprvZ7c9v0XEKYdVHIIi_-J-m5YLdDBMc2P_goaAtA4EALw_wcB)
-3. [Artemis forums](https://forum.sparkfun.com/viewforum.php?f=167&sid=b66b1e5b6aa9711dc4d064c60e6ad159)
+2. [Artemis forums](https://forum.sparkfun.com/viewforum.php?f=167&sid=b66b1e5b6aa9711dc4d064c60e6ad159)
 
 Finally, please skim the lab instructions in order to be prepared for what to do in your section!
 
 ## Instructions
 
-*For all of the following tasks, think about how you will document that your code works. We cannot grade "I did this..". Instead, you can choose to upload photos, screenshots of the serial monitor, screen-recordings, videos of the board, and/or grab the data from the serial monitor and plot them in a graph. As always, feel free to check [last years solutions](https://cei-lab.github.io/ECE4960-2022/StudentPages.html) for examples.* 
+*For all of the following tasks, think about how you will document that your code works. We cannot grade "I did this..". Instead, you can choose to upload photos, screenshots of the serial monitor, screen-recordings, videos of the board, and/or grab the data from the serial monitor and plot them in a graph. As always, feel free to check [last years solutions](https://fastrobotscornell.github.io/FastRobots2024/StudentPages.html) for examples.* 
 
-1. Hook the Artemis board up to your computer, and follow the instructions from bulletpoint 2 above ("Introduction" and "Arduino Installation"). Typical issues encountered include...    
-    1. Bad connections, because the USB connector needs to be pressed fully into the Artemis board.
-    2. If you are running Windows and the first compilation takes a long time, try adding "C:\Program Files\Arduino" (or the particular project folder) to the antivirus exclusions. 
-2. From the setup instructions linked above, follow the instructions in "Example: Blink it Up". (Note: you may need to slow the baud rate down for it to work.)
-3. In File->Examples->Artemis Examples, run Example4_Serial. (Note: to view the output and provide input open the serial monitor in the upper right hand corner of the script window.)
-4. In File->Examples->Artemis Examples, run Example2_analogRead to test your temperature sensor. Try blowing on or touching the chip to change its temperature. It may take a while to transfer your heat. 
+1. Hook the Artemis board up to your computer, and select the correct Board and Port in the ArduinoIDE. Typical connection issues include...    
+    1. Bad physical connections, because the USB connector needs to be pressed fully into the Artemis board.
+    2. If you are running Windows and the first compilation takes a long time, try adding "C:\Program Files\Arduino" (or the particular project folder) to the antivirus exclusions.
+    3. If the bootloader cannot connect, you will need to [update the CH340 Driver](https://www.wch-ic.com/downloads/CH341SER_ZIP.html).
+    4. If you are running MacOS Sequoia, you will need to *unplug the board from your computer and plug it back in* between arduino code uploads. This is a known issue, Sparkfun's current advice is to roll the OS back. If you find a solution, please include it on Ed!
+    5. Close the serial monitor (this can sometimes create cross-talk and prevent board programming).
+2. In File->Examples->01.Basics, run Blink. (Note: you may need to slow the baud rate down for it to work.)
+3. In File->Examples->Apollo3, run Example4_Serial. (Note: to view the output and provide input open the serial monitor in the upper right hand corner of the script window, again check the baud rate.)
+4. In File->Examples->Apollo3, run Example2_analogRead to test your temperature sensor. Try blowing on or touching the chip to change its temperature. It may take a while to transfer your heat. 
 5. In File->Examples->PDM, run Example1_MicrophoneOutput to test your microphone. E.g. try whistling or speaking to change the highest frequency.
 
-# Additional tasks for 5000-level students
+## Additional tasks for 5000-level students
 
-6. Program the board to turn on the LED when you play a musical "A" note over the speaker, and off otherwise. Use your phone, computer, or similar to generate the sound. If you're having fun you could even combine the microphone and the Serial output to generate an electronic tuner.
-
-
+6. Program the board to blink an LED when you play a musical "C" note over the speaker, and off otherwise. Use your phone, computer, or similar to generate the sound. If you're having fun you could even combine the microphone and the Serial output to generate an electronic tuner.
 
 
-## Part 2) Objective
-The purpose of part two of this lab is to establish communication between your computer and the Artemis board through the Bluetooth stack. 
-We will be using Python inside a Jupyter notebook on the computer end and the Arduino programming language on the Artemis side.
-We will also establish a framework for sending data via Bluetooth that will be useful in future labs.
+
+
+# Lab 1B
+
+## Objective
+The purpose of Lab 1B is to establish communication between your computer and the Artemis board through the Bluetooth stack. 
+The computer will send Python commands from a Jupyter notebook to an Artemis board running the Arduino programming language.
+We will also establish a framework for sending data from the Artemis to the computer via Bluetooth that will be useful in future labs.
 
 ## Prelab
 Please read up on this [fantastic summary](https://www.Arduino.cc/en/Reference/ArduinoBLE) of Bluetooth Low Energy (BLE).
@@ -56,7 +63,7 @@ Please read up on this [fantastic summary](https://www.Arduino.cc/en/Reference/A
 ### Computer Setup
 
 #### Install Python
-You will need to install Python 3 and pip. If you already have them installed, please make sure you have the latest releases (Python >= 3.9 and pip >= 21.0). 
+You will need to install Python 3 and pip. If you already have them installed, please make sure you have the latest releases (Python >= 3.10 and pip >= 21.0). 
 
 <details>
   <summary><strong>How to check for versions?</strong></summary>
@@ -64,7 +71,7 @@ You will need to install Python 3 and pip. If you already have them installed, p
     <blockquote>
       <p>Some Windows users may need to use `python` instead of `python3`</p>
     </blockquote>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 --version<br>python3 -m pip --version</code></pre></div></div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 --version -m pip --version</code></pre></div></div>
 </details><br>
 
 <div class="tab">
@@ -87,9 +94,9 @@ You will need to install Python 3 and pip. If you already have them installed, p
 </div>
 
 <div id="M1" class="tabcontent 1">
-  <p><strong>Recommended OS: macOS 12.0 </strong></p>
+  <p><strong>Minimum Requirements: macOS 12.0 </strong></p>
   <blockquote>
-      <p>It may work with (some) older versions. If you have issues with older versions, contact the teaching team. We will try out best to help you.</p>
+      <p>It may work with (some) older versions. </p>
   </blockquote>
   <ol>
     <li>Open a terminal and run the command: <code class="language-plaintext highlighter-rouge">python3</code>.</li>
@@ -108,8 +115,8 @@ Run the following commands in a Command Line Interface (CLI):
     ```python
     python3 -m pip install --user virtualenv
     ```
-2. Navigate to your project directory (folder).
-    > Place all your Python scripts and Jupyter notebooks within this directory.
+2. Create and navigate to your project directory (folder).
+    > You will place all your Python scripts and Jupyter notebooks within this directory.
 3. Create a new virtual environment named "FastRobots_ble"
     ```python
     python3 -m venv FastRobots_ble
@@ -150,17 +157,17 @@ For any lab using Python scripts (or Jupyter notebooks), you will first need to 
 
 ##### Install Python Packages
 1. Activate your virtual environment:
-    > Your CLI prompt should now have the prefix **(FastRobots_ble)**.
+    > Your CLI prompt will have the prefix **(FastRobots_ble)**.
 2. Install packages:
     ```bash
     pip install numpy pyyaml colorama nest_asyncio bleak jupyterlab
     ```
 **NOTE**: In Windows, you may see an error while installing some of these packages. Follow the download link in the error message to download and install (the unnecessarily huge) C++ build tools.
 
-### Lab 2 Codebase
+### Lab Codebase
 
-1. Download and unzip the [codebase](./ble_robot-1.1.zip) into your project directory.
-2. Copy the ```ble_python``` directory into your project directory.
+Download and unzip the [codebase](./ble_robot-1.1.zip) into your project directory.
+<!--2. Copy the ```ble_python``` directory into your project directory.-->
 
 ```
 ble_robot-1.1
@@ -200,7 +207,7 @@ You will be writing most of your Python code using this browser window on Jupyte
 If you are new to JupyterLab, please go through the [Introduction to JupyterLab](https://cei-lab.github.io/FastRobots-2023/tutorials/jupyter_notebooks.html) tutorial (available under the [Tutorials](https://cei-lab.github.io/FastRobots-2023/tutorials/) page).
 
 ### Read Through Codebase
-Please read through the codebase (in particular, the ```demo.ipynb``` Jupyter notebook) to understand the different functions that you will be using in this lab.
+Please read (do not run) through the codebase (in particular, the ```demo.ipynb``` Jupyter notebook) to understand the different functions that you will be using in this lab.
 
 ### Artemis Board Setup
 
@@ -212,25 +219,20 @@ Install **ArduinoBLE** from the library manager (Tools -> Manage Libraries...) i
     > Make sure you change the serial baud rate to 115200 bps.
 2. The Artemis board should now print its MAC address.
 
-## Code Summary 
+### Code Summary 
 
 The Python and Artemis packages provide you with the base code necessary to establish a communication channel between your computer and the Artemis board through BLE. 
 
-### Bluetooth Library Limitations
+#### Bluetooth Library Limitations
 
 Though a characteristic value can be up to 512 bytes long (according to the Bluetooth Core Specification), the ArduinoBLE library limits the maximum size to 255 bytes. We are using a more conservative size limitation of 150 bytes. The provided Python codebase throws an error if you attempt to send data that is larger than the member variable ArtemisBLEController.max_write_length (150 bytes). On the Arduino side, the macro MAX_MSG_SIZE (defined in EString.h) is used to set the character array sizes used in various classes.
 
-### ble_arduino – Processing Commands on the Artemis Board
+#### ble_arduino – Processing Commands on the Artemis Board
 
 This is a summary of the code running on your Artemis, found in the ```ble_arduino.ino``` file.
 
 1. **BLE UUIDS**
 * These are the Universally Unique Identifiers. This helps differentiate the different kinds of data that you’d want to send between the Artemis and your computer. 
-* In order to generate new UUIDs to use, run these lines in your Jupyter Notebook and copy them to the appropriate places.
- ```python
-   from uuid import uuid4
-   uuid4()
- ```
 
 2. **BLEService**
 * Used to set advertised local name and service, add BLE characteristics, and add BLE service
@@ -288,7 +290,7 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 
 ### Configurations
 
-1. Update your Artemis MAC Address
+1. Update the Artemis MAC Address on the Computer
 * In connections.yaml: replace the artemis_address value with the MAC address printed by your Artemis in the prelab on this line:
 ```python
 artemis_address: 'C0:C2:8A:89:98:08'
@@ -303,15 +305,15 @@ artemis_address: 'C0:C2:8A:89:98:08'
    from uuid import uuid4
    uuid4()
  ```
-* In ble_arduino.ino: replace the BLEService UUID with this generated UUID on this line:
+* In ble_arduino.ino: replace the BLEService UUID with the generated UUID on this line:
 ``` arduino
 #define BLE_UUID_TEST_SERVICE "9A48ECBA-2E92-082F-C079-9E75AAE428B1" 
 ```
-* In connections.yaml: replace ble_service with this generated UUID on this line:
+* In connections.yaml: replace ble_service with the generated UUID on this line:
 ``` python
 ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1' 
 ```
-* (Extra step for Windows/Linux) In base_ble.py: change line 53 from
+* (Extra step for Windows/Linux) In base_ble.py: change line 69 from
 ```python
 if IS_ATLEAST_MAC_OS_12:
 ```
@@ -319,8 +321,9 @@ to
 ```python
 if True:
 ```
-3. The UUIDs used in the Arduino sketch should match those used by Python in the configuration file (**connection.yaml**).
+3. Check and make sure the UUIDs used in the Arduino sketch match those used by Python in the configuration file (**connection.yaml**).
 4. The command types defined in *enum CommandTypes* in the Arduino sketch should match those defined in cmd_types.py.
+5. Reupload ble_arduino.ino on the Artemis.
 
 * Before carrying out the tasks, ensure that you open the **demo.ipynb** notebook in the directory **ble_python** in JupyterLab. Follow and test the instructions in the notebook to test and use BLE.
 > Run through all the cells before you begin to work on the lab tasks.
@@ -329,7 +332,7 @@ if True:
 
 In order to test your robot's sensors more effectively, it is critical to have a working wireless debugging system. The following tasks will ensure that you can receive timestamped messages from the Artemis board.
 
-1. Send an *ECHO* command with a string value from the computer to the Artemis board, and receive an augmented string on the computer.
+1. Send a string value from the computer to the Artemis board using an *ECHO* command. The computer should then receive and print an augmented string.
     > For example, the computer sends the string value "HiHello" to the Artemis board using the ECHO command, and the computer receives the augmented string "Robot says -> HiHello :)" from a read GATT characteristic.
 
 2. Add a command GET_TIME_MILLIS which makes the robot reply write a string such as "T:123456" to the string characteristic.
@@ -357,18 +360,18 @@ as base64-encoded bytes.
    2. Receive a float value in Python using **receive_string()** (and subsequently converting it to a float type in Python) on a characteristic that is defined as a **BLECStringCharactersitic** in the Arduino side
    -->
 
-## Additional tasks for 5000-level students
+### Additional tasks for 5000-level students
   
 Perform an analysis on the communication performance.
 > TIP: Use the notification handler for this. If you find a better way, include your approach in the write-up.
 
-1. **Effective Data Rate And Overhead**: Send a message from the computer and receive a reply from the Artemis board. Note the respective times for each event, calculate the data rate
+8. **Effective Data Rate And Overhead**: Send a message from the computer and receive a reply from the Artemis board. Note the respective times for each event, calculate the data rate
 for 5-byte replies and 120-byte replies. Do many short
 packets introduce a lot of overhead? Do larger replies help 
 to reduce overhead? You may also test additional reply sizes.
 Please include at least one plot to support your write-up.
 
-2. **Reliability**: What happens when you send data at a higher rate from the robot to the computer? Does the computer read all the data published (without missing anything) from the Artemis board? Include your answer in the write-up.
+9. **Reliability**: What happens when you send data at a higher rate from the robot to the computer? Does the computer read all the data published (without missing anything) from the Artemis board? Include your answer in the write-up.
 
 ## Write-up
 
@@ -394,5 +397,3 @@ This is not a strict requirement, but may be helpful in understanding what shoul
 * **Briefly** describe what you've learned, challenges that you faced, and/or any unique solutions used to fix problems. It is important to keep these writeups succinct. You will not get extra points for writing more words if the content doesn't contribute to communicating your understanding of the lab material. 
 
 Please also include code __snippets__ (consider using [GitHub Gists](https://gist.github.com)) in appropriate sections if you included any written code. **Do not copy and paste all your code.** Include only relevant functions used for each task. **Points will be deducted for pasting all of your code in the lab report.** Also consider adding pseudocode snippets if large amounts of code are needed to explain your lab. 
-
-
