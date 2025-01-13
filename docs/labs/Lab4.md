@@ -23,7 +23,7 @@ The purpose of this lab is for you to change from manual to open loop control of
 
 ## Prelab
 
-If you have never used and osciloiscope before, or would like a refresher, please watch [this](https://youtu.be/lGk9z258NE0) tutorial by Dr. Kirstin Petersen for reference. 
+If you have never used and oscilloscope before, or would like a refresher, please watch [this](https://youtu.be/lGk9z258NE0) tutorial by Dr. Kirstin Petersen for reference. 
 
 Check out the [documentation](https://www.pololu.com/product-info-merged/2130) and the [datasheet](https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fdrv8833) for the dual motor driver. 
 
@@ -43,7 +43,7 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 2. Use analogWrite commands to generate PWM signals and show (using an oscilloscope) that you can regulate the power on the motor driver output. 
 
 3. Take your car apart!
-   - Unscrew and remove the top (blue) shell from your car. You may have to cut the wires for the chassis LEDs (we will not be using them in this class). *Don't loose the screws!!*
+   - Unscrew and remove the top (blue) shell from your car. You may have to cut the wires for the chassis LEDs (we will not be using them in this class). *Don't lose the screws!!*
    - Locate and unmount the control PCB and cut wires to the motors and the battery connector as close to the board as possible.
 
 4. Place your car on its side, such that the spinning wheels are elevated, and show that you can run the motor in both directions. 
@@ -69,9 +69,9 @@ In your lab write-up, discuss/show how you decide to hook up/place the motor dri
 
 ## Additional tasks for 5000-level students
 
-1. Consider what frequency analogWrite generates. Is this adequately fast for these motors? Can you think of any benefits to manually configuring the timers to generate a faster PWM signal?
+11. Consider what frequency analogWrite generates. Is this adequately fast for these motors? Can you think of any benefits to manually configuring the timers to generate a faster PWM signal?
 
-2. Relating to task 8 above, try to (experimentally) figure out not just at what PWM value the robot starts moving (forward and on-axis turns), but also the lowest PWM value at which you can keep the robot running once it is in motion. How quickly can you have the robot settle at its slowest speed? (First program a value that overcomes static friction and gets the robot moving, then a value that keeps it moving as slowly as possible.)
+12. Relating to task 8 above, try to (experimentally) figure out not just at what PWM value the robot starts moving (forward and on-axis turns), but also the lowest PWM value at which you can keep the robot running once it is in motion. How quickly can you have the robot settle at its slowest speed? (First program a value that overcomes static friction and gets the robot moving, then a value that keeps it moving as slowly as possible.)
 
 ## Write-up
 
