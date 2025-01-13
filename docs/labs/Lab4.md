@@ -20,6 +20,10 @@ The purpose of this lab is for you to change from manual to open loop control of
 * 1 x [Force1 RC car](https://force1rc.com/products/cyclone-remote-control-car-for-kids-adults)
 * 1 x [Li-Ion 3.7V 850mAh battery](https://www.amazon.com/URGENEX-Battery-Rechargeable-Quadcopter-Charger/dp/B08T9FB56F/ref=sr_1_3?keywords=lipo+battery+3.7V+850mah&qid=1639066404&sr=8-3)
 * 2 x [Dual motor drivers](https://www.digikey.com/en/products/detail/pololu-corporation/2130/10450426)
+* 1 x Wire strippers/ Mini cutters
+* 1 x Soldering iron
+* 1 x External power supply
+* 1 x Oscilloscope
 
 ## Prelab
 
