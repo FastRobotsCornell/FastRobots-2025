@@ -86,18 +86,19 @@ You will need to install Python 3 and pip. If you already have them installed, p
 <div id="W1" class="tabcontent 1">
   <p><strong>Minimum Requirements:</strong> Windows 10</p>
   <ol>
-    <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.10</a></li>
+    <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.13</a></li>
     <li>Install/Upgrade <a href="https://pip.pypa.io/en/stable/installation/">pip</a></li>
+    <li>Remember to select add to Python to Path</a></li>
   </ol>
 </div>
 
 <div id="M1" class="tabcontent 1">
-  <p><strong>Recommended OS: macOS 12.0 </strong></p>
+  <p><strong>Minimum Requirements:</strong> macOS 12.0</p>
   <blockquote>
       <p>It may work with (some) older versions. If you have issues with older versions, contact the teaching team. We will try out best to help you.</p>
   </blockquote>
   <ol>
-    <li>Open a terminal and run the command: <code class="language-plaintext highlighter-rouge">python3</code>.</li>
+    <li>Open a terminal and run the command: <code class="language-plaintext highlighter-rouge">python3</code></li>
     <li>This should bring up a xcode dialog box asking you to install the necessary software.</li>
   </ol>
 </div>
