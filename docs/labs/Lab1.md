@@ -69,7 +69,7 @@ You will need to install Python 3 and pip. If you already have them installed, p
     <blockquote>
       <p>Some Windows users may need to use `python` instead of `python3`</p>
     </blockquote>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 --version -m pip --version</code></pre></div></div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 --version<br>python3 -m pip --version</code></pre></div></div>
 </details><br>
 
 <div class="tab">
