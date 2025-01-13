@@ -30,7 +30,7 @@ Finally, please skim the lab instructions in order to be prepared for what to do
 
 ## Instructions
 
-*For all of the following tasks, think about how you will document that your code works. We cannot grade "I did this..". Instead, you can choose to upload photos, screenshots of the serial monitor, screen-recordings, videos of the board, and/or grab the data from the serial monitor and plot them in a graph. As always, feel free to check [last years solutions](https://fastrobotscornell.github.io/FastRobots2024/StudentPages.html) for examples.* 
+*For all of the following tasks, think about how you will document that your code works. We cannot grade "I did this..". Instead, you can choose to upload photos, screenshots of the serial monitor, screen-recordings, videos of the board, and/or grab the data from the serial monitor and plot them in a graph. As always, feel free to check [last years solutions](https://fastrobotscornell.github.io/FastRobots-2024/StudentPages.html) for examples.* 
 
 1. Hook the Artemis board up to your computer, and select the correct Board and Port in the ArduinoIDE. Typical connection issues include...    
     1. Bad physical connections, because the USB connector needs to be pressed fully into the Artemis board.
