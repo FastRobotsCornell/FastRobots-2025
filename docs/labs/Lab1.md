@@ -383,7 +383,7 @@ We understand that some of the sections in your webpage will overlap with the in
 This is not a strict requirement, but may be helpful in understanding what should be included in your webpage. It also helps with the flow of your report to show your understanding to the lab graders.
 
 1. Prelab:
-* Setup: Briefly describe the steps taken to set up your computer for Lab 2, showing any results (i.e. MAC address printing)
+* Setup: Briefly describe the steps taken to set up your computer for Lab 1, showing any results (i.e. MAC address printing)
 * Codebase: Add a brief explanation of your understanding of the codebase and how Bluetooth works between your computer and the Artemis
 
 2. Lab Tasks:
