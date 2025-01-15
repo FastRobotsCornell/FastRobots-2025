@@ -17,7 +17,7 @@ a couple sentence summary for Cameron.
 
 ### Mikayla Lahr
 <p align="center"><img src="./MikaylaLahr.jpg" width="300"></p>
-a couple sentence summary for Mikayla.
+Mikayla is a Masters of Engineering student in MAE with a focus on robotics. Coursework has included classes such as Fast Robots, Foundations of Robotics, and Robot Perception. Mikayla previously worked in Professor Petersen's Collective Embodied Intelligence Lab and is currently working in Professor Ferrari's Laboratory for Intelligent Systems and Controls.  
 
 ### Daria Kot
 <p align="center"><img src="./DariaKot.jpg" width="300"></p>
