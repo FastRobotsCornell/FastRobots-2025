@@ -13,7 +13,7 @@ a couple sentence summary for Harry.
 
 ### Cameron Urban (he/him)
 <p align="center"><img src="./CameronUrban.jpg" width="300"></p>
-a couple sentence summary for Cameron.
+Cameron Urban is an MAE PhD student in Dr. Farrell Helbling’s lab. His research is focused on fish-inspired micro robots. He received a Bachelor of Science in mechanical engineering from Washington University in St. Louis. In the past, he has spent time researching bat flight at Brown University, engineering space systems at MIT Lincoln Laboratory, and working with hardware-focused startups in Shenzhen, China. When not working, Cameron enjoys contributing to open-source software projects, scuba diving, and getting beaten in chess.
 
 ### Mikayla Lahr
 <p align="center"><img src="./MikaylaLahr.jpg" width="300"></p>
