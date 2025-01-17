@@ -9,7 +9,7 @@ Farrell is an Assistant Professor at Cornell in the department of Electrical and
 
 ### Hang "Harry" Gao (he/him)
 <p align="center"><img src="./HarryGao.jpg" width="300"></p>
-a couple sentence summary for Harry.
+Hang Gao is a PhD student at Cornell University, advised by Prof. Farrell Helbling. His research focuses on integrating control, sensing, communication, and power electronics into microrobots designed to operate under stringent constraints on computing, memory, latency, and power.
 
 ### Cameron Urban (he/him)
 <p align="center"><img src="./CameronUrban.jpg" width="300"></p>
