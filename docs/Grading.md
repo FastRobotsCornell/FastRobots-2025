@@ -21,7 +21,7 @@ This grading policy is preliminary and may change throughout the semester.
 | Lab 11 Localization (real)                                    |      10 | 
 | Lab 12 Planning and Execution                                 |    12.5 |  
 | Participation                                                 |      10 |
-| Bonus points for completing entry and exit surveys            |       2 |
+| Bonus points for midterm and final course evals               |       2 |
 | **Total:**                                                    | **102** |
 
 ### Lab Grading
