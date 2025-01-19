@@ -19,7 +19,7 @@ This lab is divided into two parts, Lab 1A, which covers the Arduino IDE and pro
 The purpose of Lab 1A is for you to setup and become familiar with the Arduino IDE and the Artemis board. After this lab, you should be comfortable programming your board, using the board LED, reading/writing serial messages over USB, and using the onboard temperature sensor and Pulse Density Microphone.
 
 ## Prelab
-Install the [Arduino IDE](https://www.arduino.cc/en/main/software) on your computer. Please use the latest versions of ArduinoIDE and Sparkfun Appollo3 support software. Update them if necessary. If you have any issues, please contact the TA team.
+Install the [Arduino IDE](https://www.arduino.cc/en/main/software) on your computer. Please use the latest versions of ArduinoIDE and [Sparkfun Appollo3 support software](https://learn.sparkfun.com/tutorials/artemis-development-with-the-arduino-ide/setting-up-the-arduino-ide). Update them if necessary. If you have any issues, please contact the TA team.
 While we only guarantee TA support on the lab computers this semester, you can likely do all Arduino-related tasks on your own computer which will save everyone time! 
    
 Check out the Artemis description, features, and helpful forums here:
