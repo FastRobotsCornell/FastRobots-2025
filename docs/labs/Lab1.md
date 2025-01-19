@@ -295,7 +295,7 @@ This is a summary of the code running on your Artemis, found in the ```ble_ardui
 ```python
 artemis_address: 'C0:C2:8A:89:98:08'
 ```
-> A valid MAC address is a 12 digit hexadecimal number, often represented as 6 pairs of hexadecimal digits separated by colons. If the Artemis board displays a MAC address that is lesser than 12 digits, left pad the appropriate pairs with 0s. For example, if the displayed MAC address is `C0:C2:8A:89:98:8`, update the configuration file(**connection.yaml**) with
+> A valid MAC address is a 12 digit hexadecimal number, often represented as 6 pairs of hexadecimal digits separated by colons. If the Artemis board displays a MAC address that is less than 12 digits, left pad the appropriate pairs with 0s. For example, if the displayed MAC address is `C0:C2:8A:89:98:8`, update the configuration file(**connection.yaml**) with
 ```yaml
 artemis_address: 'C0:C2:8A:89:98:08'
 ```
