@@ -315,11 +315,11 @@ ble_service: '9a48ecba-2e92-082f-c079-9e75aae428b1'
 ```
 * (Extra step for Windows/Linux) In base_ble.py: change line 69 from
 ```python
-if IS_ATLEAST_MAC_OS_12:
+elif IS_ATLEAST_MAC_OS_12:
 ```
 to
 ```python
-if True:
+elif True:
 ```
 3. Check and make sure the UUIDs used in the Arduino sketch match those used by Python in the configuration file (**connection.yaml**).
 4. The command types defined in *enum CommandTypes* in the Arduino sketch should match those defined in cmd_types.py.
