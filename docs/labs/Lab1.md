@@ -88,7 +88,7 @@ You will need to install Python 3 and pip. If you already have them installed, p
   <ol>
     <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.13</a></li>
     <li>Install/Upgrade <a href="https://pip.pypa.io/en/stable/installation/">pip</a></li>
-    <li>Remember to select add to Python to Path</a></li>
+    <li>Remember to select the "Add Python to Path" option in the installer</a></li>
   </ol>
 </div>
 
