@@ -1,6 +1,6 @@
 # ECE 4960/5960
 
-## Cornell, Spring 2024
+## Cornell, Spring 2025
 
 ### Tutorials and Helpful Resources
 
