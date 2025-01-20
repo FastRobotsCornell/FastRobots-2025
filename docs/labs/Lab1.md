@@ -204,7 +204,7 @@ We will be using Jupyter notebooks to write Python code. Before you can open a J
 
 You will be writing most of your Python code using this browser window on Jupyter notebooks. For students proficient in Python, you may choose to write some of your modules in Python script files and import them into your Jupyter notebook.
 
-If you are new to JupyterLab, please go through the [Introduction to JupyterLab](https://cei-lab.github.io/FastRobots-2023/tutorials/jupyter_notebooks.html) tutorial (available under the [Tutorials](https://cei-lab.github.io/FastRobots-2023/tutorials/) page).
+If you are new to JupyterLab, please go through the [Introduction to JupyterLab](https://fastrobotscornell.github.io/FastRobots-2025/tutorials/jupyter_notebooks.html) tutorial (available under the [Tutorials](https://fastrobotscornell.github.io/FastRobots-2025/tutorials/) page).
 
 ### Read Through Codebase
 Please read (do not run) through the codebase (in particular, the ```demo.ipynb``` Jupyter notebook) to understand the different functions that you will be using in this lab.
