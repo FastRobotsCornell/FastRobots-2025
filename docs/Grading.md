@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](../index.md)
+[Return to main page](./index.md)
 
 This grading policy is preliminary and may change throughout the semester.
 
