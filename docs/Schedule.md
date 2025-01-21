@@ -1,5 +1,5 @@
 # Fast Robots, Tentative Schedule Spring 2025
-[Return to main page](../index.md)
+[Return to main page](./index.md)
 
 All deadlines are specified on Canvas.
 
@@ -26,4 +26,4 @@ All deadlines are specified on Canvas.
 | 16 (T)  | Final Showcase                                                       | [Lab 12, Planning and execution (real)](labs/Lab12.md)                               |
 
 
-[Lecture slides](lectures/Readme.md)
+[Lecture slides](lectures/readme.md)
