@@ -28,5 +28,5 @@ Daria is a Senior, majoring in Computer Science, minoring in Robotics and Fine A
 Cheney Zhang is an MAE graduate student from Prof. Helbling’s lab interested in microrobotic systems and biologically-inspired design. In his spare time, he enjoys classical music and tennis. He also loves fossil hunting and cross-country. (He uses macOS 12 with Intel processor)
 
 ### Nandita Nagarajan (she/her)
-<p align="center"><img src="./NanditaNagarajan.jpg" width="300"></p>
+<p align="center"><img src="./NanditaNagarajan.JPG" width="300"></p>
 Nandita is a senior studying Electrical and Computer Engineering, with a minor in Mechanical Engineering. She is on Cornell Rocketry Team, and has been the electrical subteam lead for the past two years. In her free time, she loves to sing and has been singing for 15 years!
