@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](../index.md)
+[Return to main page](./index.md)
 
 # Student Pages, Spring 2025
 * Matthew Amorocho
