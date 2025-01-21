@@ -25,6 +25,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 ## Resources
 
 * [Schedule](./Schedule.md)
+<!--* [Labs](./Labs.md)-->
 * [Lecture slides](./lectures/readme.md)
 * [Student pages](./StudentPages.md)
 * [Lab kit](./BOM.md)
