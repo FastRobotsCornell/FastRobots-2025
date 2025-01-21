@@ -1,6 +1,6 @@
 # Fast Robots @ Cornell
 
-[Return to main page](../index.md)
+[Return to main page](./index.md)
 
 **Lectures** will take place in Hollister Hall 110. Unless agreed upon otherwise with the instructors, all students are expected to attend lectures in person. Lecture slides will be posted to the website after class for those who cannot attend.
 
