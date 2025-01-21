@@ -19,7 +19,7 @@ This lab is divided into two parts, Lab 1A, which covers the Arduino IDE and pro
 The purpose of Lab 1A is for you to setup and become familiar with the Arduino IDE and the Artemis board. After this lab, you should be comfortable programming your board, using the board LED, reading/writing serial messages over USB, and using the onboard temperature sensor and Pulse Density Microphone.
 
 ## Prelab
-Install the [Arduino IDE](https://www.arduino.cc/en/main/software) on your computer. Please use the latest versions of ArduinoIDE and [Sparkfun Appollo3 support software](https://learn.sparkfun.com/tutorials/artemis-development-with-the-arduino-ide/setting-up-the-arduino-ide). Update them if necessary. If you have any issues, please contact the TA team.
+Install the [Arduino IDE](https://www.arduino.cc/en/main/software) on your computer. Please use the latest versions of ArduinoIDE and Sparkfun Appollo3 boards manager (get json link [here](https://learn.sparkfun.com/tutorials/artemis-development-with-the-arduino-ide/setting-up-the-arduino-ide) and add to your Settings/Preferences in Arduino). Update them if necessary. If you have any issues, please contact the TA team.
 While we only guarantee TA support on the lab computers this semester, you can likely do all Arduino-related tasks on your own computer which will save everyone time! 
    
 Check out the Artemis description, features, and helpful forums here:
@@ -35,7 +35,7 @@ Finally, please skim the lab instructions in order to be prepared for what to do
 1. Hook the Artemis board up to your computer, and select the correct Board and Port in the ArduinoIDE. Typical connection issues include...    
     1. Bad physical connections, because the USB connector needs to be pressed fully into the Artemis board.
     2. If you are running Windows and the first compilation takes a long time, try adding "C:\Program Files\Arduino" (or the particular project folder) to the antivirus exclusions.
-    3. Switch from the SVL bootloader to the Ambiq bootloader.
+    3. Switch from the SVL bootloader to the Ambiq bootloader. (Note: there is an odd issue for Mac users and the Ambiq bootloader, talk to a TA first.)
     4. If the bootloader cannot connect, you will need to [update the CH340 Driver](https://www.wch-ic.com/downloads/CH341SER_ZIP.html).
     5. If you are running MacOS Sequoia, you will need to *unplug the board from your computer and plug it back in* between arduino code uploads. This is a known issue, Sparkfun's current advice is to roll the OS back. If you find a solution, please include it on Ed!
     6. Close the serial monitor (this can sometimes create cross-talk and prevent board programming).
