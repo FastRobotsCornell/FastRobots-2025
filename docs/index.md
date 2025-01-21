@@ -16,6 +16,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 * Class Hours: Tuesday-Thursday 11:40am-12:55pm
 * Class Location: Hollister 110
 * Lab Hours: T 2:00-4:30pm, W 8:30-11:00am, W 2:00-4:30pm
+* Open Hours: [Google Calendar](https://calendar.google.com/calendar/u/1?cid=Y18yZTM4YTYwN2EwOTNhNzg1NmZmMTA4MzhkMDMyMDY4MzdhNTZmMTUwYTVmYWYyZGUwZGI3YTBlZWZmMjE5OWQ2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 * Lab Location: Phillips 427
 * Canvas: Assignment dates and grades will be facilitated through Canvas
 * EdDiscussion: The online discussion forum can be accessed through Canvas
@@ -25,7 +26,7 @@ Instead of traditional hand-ins, we leverage peer-to-peer mentoring where studen
 ## Resources
 
 * [Schedule](./Schedule.md)
-<!--* [Labs](./Labs.md)-->
+* [Labs](./labs/readme.md)
 * [Lecture slides](./lectures/readme.md)
 * [Student pages](./StudentPages.md)
 * [Lab kit](./BOM.md)
