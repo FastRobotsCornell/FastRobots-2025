@@ -86,9 +86,9 @@ You will need to install Python 3 and pip. If you already have them installed, p
 <div id="W1" class="tabcontent 1">
   <p><strong>Minimum Requirements:</strong> Windows 10</p>
   <ol>
-    <li>Install/Upgrade <a href="https://www.python.org/downloads/">Python 3.13</a></li>
-    <li>Install/Upgrade <a href="https://pip.pypa.io/en/stable/installation/">pip</a></li>
-    <li>Remember to select the "Add Python to Path" option in the installer</a></li>
+    <li>Install/Upgrade Python 3.13 from the Microsoft Store</li>
+    <li>Install/Upgrade pip using the command prompt</li>
+    <li>Remember to select the "Add Python to Path" option in the installer</li>
   </ol>
 </div>
 
