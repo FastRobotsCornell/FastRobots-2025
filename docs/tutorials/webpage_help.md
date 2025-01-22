@@ -10,6 +10,6 @@
 * [Example website made with Bootstrap](https://danielkim802.github.io/)
 * [Markdown cheat sheet pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 * [Markdown cheat sheet, Github](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Embedding google drive videos in markdown](https://kmwebsolutions.co.uk/how-to-embed-videos-on-your-blog-from-google-drive/)
+* [Embedding google drive videos in markdown](https://ardalis.com/how-to-embed-youtube-video-in-github-readme-markdown/)
 * [Fritzing, program to draw nice breadboard circuits](http://fritzing.org/download/?donation=0)
 
