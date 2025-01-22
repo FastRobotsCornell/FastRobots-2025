@@ -8,7 +8,7 @@ All deadlines are specified on Canvas.
 
 | Week    | Topic                                                                | Homework                                                                                   |
 | ------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 1  (TR) | Class intro, Data, Comms, Linear Algebra refresh, T-matrices         | [Lab 1, Artemis](labs/Lab1.md), [Make and share your Github page ](./tutorials/webpage_help.md) |
+| 1  (TR) | [Class intro](./lectures/FastRobots2025_Lecture1_Introduction.pdf), Data, Comms, Linear Algebra refresh, T-matrices         | [Lab 1, Artemis](labs/Lab1.md), [Make and share your Github page ](./tutorials/webpage_help.md) |
 | 2  (TR) | Sensors (TOF, proximity, encoders, IMU) and sensor fusion            | [Lab 1, Artemis, continued](labs/Lab1.md)                                                  |
 | 3  (TR) | Actuators, circuits and routing, EMI                                 | [Lab 2, IMU](labs/Lab2.md)                                                           | 
 | 4  (TR) | Linear systems, PID control                                          | [Lab 3, ToF](labs/Lab3.md)                                                           |
