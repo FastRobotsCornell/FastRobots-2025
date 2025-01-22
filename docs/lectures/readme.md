@@ -6,8 +6,8 @@
 
 Lecture slides will be uploaded on this page.
 
-<!-- * [Lecture 1 - Intro](./FastRobots-1-Intro.pdf)
-* [Lecture 2 - Transformation Matrices]
+* [Lecture 1 - Intro](./FastRobots2025_Lecture1_Introduction.pdf)
+<!-- * [Lecture 2 - Transformation Matrices]
 * [Lecture 3 - Sensors I]
 * [Lecture 4 - Sensors II / IMU], [code](./Lecture4-IMU.ino)
 * [Lecture 5 - EMI and Wiring], [worksheet]
