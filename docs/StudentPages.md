@@ -54,7 +54,7 @@
 * [Alex Allen](https://tripa2020.github.io) This is just for formatting
 -->
 ---
-* [2024 Student pages](https://fastrobotscornell.github.io/FastRobots2024/StudentPages.html)
-* [2023 Student pages](https://cei-lab.github.io/FastRobots-2023/StudentPage)
+* [2024 Student pages](https://fastrobotscornell.github.io/FastRobots-2024/StudentPages.html)
+* [2023 Student pages](https://cei-lab.github.io/FastRobots-2023/StudentPages.html)
 * [2022 Student pages](https://cei-lab.github.io/ECE4960-2022/StudentPages.html)
 * [2020 Student pages](https://cei-lab.github.io/ECE4960-2020/StudentPages.html)
