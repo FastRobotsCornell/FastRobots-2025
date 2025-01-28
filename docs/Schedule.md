@@ -9,7 +9,7 @@ All deadlines are specified on Canvas.
 | Week    | Topic                                                                | Homework                                                                                   |
 | ------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | 1  (TR) | [Class intro](./lectures/FastRobots2025_Lecture1_Introduction.pdf), [T-matrices and Data Types](./lectures/FastRobots2025_Lecture2_Tmatrices.pdf)         | [Lab 1, Artemis](labs/Lab1.md), [Make and share your Github page ](./tutorials/webpage_help.md) |
-| 2  (TR) | Sensors (TOF, proximity, encoders), Sensor fusion and IMU            | [Lab 1, Artemis, continued](labs/Lab1.md)                                                  |
+| 2  (TR) | [Sensors (TOF, proximity, encoders)](./lectures/FastRobots2025_Lecture3_Sensors.pdf) , Sensor fusion and IMU            | [Lab 1, Artemis, continued](labs/Lab1.md)                                                  |
 | 3  (TR) | Actuators, circuits and routing, EMI                                 | [Lab 2, IMU](labs/Lab2.md)                                                           | 
 | 4  (TR) | Linear systems, PID control                                          | [Lab 3, ToF](labs/Lab3.md)                                                           |
 | 5  (R) | Linearizing                                        | No Lab                            |
