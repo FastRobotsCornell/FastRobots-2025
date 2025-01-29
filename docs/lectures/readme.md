@@ -9,11 +9,11 @@ Lecture slides will be uploaded on this page.
 * [Lecture 1 - Intro](./FastRobots2025_Lecture1_Introduction.pdf)
 * [Lecture 2 - Transformation Matrices](./FastRobots2025_Lecture2_Tmatrices.pdf)
 * [Lecture 3 - Sensors I](./FastRobots2025_Lecture3_Sensors.pdf)
-* Lecture 4 - Sensors II / IMU, [code](./Lecture4-IMU.ino)
-* Lecture 5 - EMI and Wiring, [worksheet]
+* Lecture 4 - Sensors II / IMU, code
+* Lecture 5 - EMI and Wiring, worksheet
 * Lecture 6 - Batteries and Actuators
 * Lecture 7 - PID control
-* Lecture 8 - PID control, continued, [worksheet](https://bit.ly/3LIAxae)
+* Lecture 8 - PID control, continued, worksheet <!--(https://bit.ly/3LIAxae)-->
 * Lecture 9 - Linear systems, recap
 * Lecture 10 - Controllability
 * Lecture 11 - Controllability/LQR, [Inverted Pendulum Github Repository](https://github.com/bertozzijr/Control_Bootcamp_S_Brunton)
