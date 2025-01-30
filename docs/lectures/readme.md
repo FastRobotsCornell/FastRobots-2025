@@ -9,7 +9,7 @@ Lecture slides will be uploaded on this page.
 * [Lecture 1 - Intro](./FastRobots2025_Lecture1_Introduction.pdf)
 * [Lecture 2 - Transformation Matrices](./FastRobots2025_Lecture2_Tmatrices.pdf)
 * [Lecture 3 - Sensors I](./FastRobots2025_Lecture3_Sensors.pdf)
-* Lecture 4 - [Sensors II / IMU](./FastRobots2025_Lecture4_SensorFusionIMU.pdf), [code](./Lecture4-IMU.ino)
+* [Lecture 4 - Sensors II / IMU](./FastRobots2025_Lecture4_SensorFusionIMU.pdf), [code](./Lecture4-IMU.ino)
 * Lecture 5 - EMI and Wiring, worksheet
 * Lecture 6 - Batteries and Actuators
 * Lecture 7 - PID control
