@@ -34,7 +34,7 @@ void setup() {
     Serial.print( F("Initialization of the sensor returned: ") );
     Serial.println( myICM.statusString() );
     if( myICM.status != ICM_20948_Stat_Ok ){
-      Serial.println( "Trying again..." );
+      Serial.println( "Trying again.." );
       delay(500);
     }else{
       initialized = true;
@@ -57,80 +57,83 @@ void loop() {
     {
       myICM.getAGMT();                // The values are only updated when you call 'getAGMT'
 
-/*
+
       //Slide 20 Accelerometer introduction
+     
       //NB: Setup Serialplot Y axis [-2000 2000]
+      Serial.print("lower_limit:");
+      Serial.print(-2500);
+      Serial.print(", upper_limit:");
+      Serial.print(2500);
+      Serial.print(", acc_x:"); 
+      Serial.print("acc_x:")
       Serial.print( myICM.accX() );
-      Serial.print(", ");
+      Serial.print(", acc_y:");
       Serial.print( myICM.accY() );
-      Serial.print(", ");
-      Serial.print( myICM.accZ() );
+      Serial.print(", acc_z:");
+      Serial.println( myICM.accZ() );
       
-   
-      //Slide 22, accelerometer
+/*
+      //Slide 24, accelerometer
       //NB: Setup Serialplot Y axis [-180 180]
+        Serial.print("lower_limit:");
+        Serial.print(-200);
+        Serial.print(", upper_limit:");
+        Serial.print(200);
         pitch_a = atan2(myICM.accY(),myICM.accZ())*180/M_PI; 
         roll_a  = atan2(myICM.accX(),myICM.accZ())*180/M_PI; 
-        Serial.print(", ");
+        Serial.print(", pitch_a:");
         Serial.print(pitch_a);
-        Serial.print(", ");
-        Serial.print(roll_a);
+        Serial.print(", roll_a:");
+        //Serial.println(roll_a); //FOR THE SECOND DEMO, COMMENT OUT LINE FOR THIRD DEMO
+        Serial.print(roll_a); //FOR THE THIRD DEMO, COMMENT OUT LINE FOR SECOND DEMO
+        
   
   
-      //Slide 23, LPF
+      //Slide 25, LPF
       //Tilt along y-axis
-      const float alpha = 0.2;
+      const float alpha = 0.02;
       pitch_a_LPF[n] = alpha*pitch_a + (1-alpha)*pitch_a_LPF[n-1];
       pitch_a_LPF[n-1] = pitch_a_LPF[n];
-      Serial.print(", ");
+      Serial.print(", pitch_LPF:");
       Serial.println(pitch_a_LPF[n]);
-  */
+  
 
-      //Slide 33, Gyroscope
+      //Slide 32, Gyroscope
+      Serial.print("lower_limit:");
+      Serial.print(-200);
+      Serial.print(", upper_limit:");
+      Serial.print(200);
       dt = (micros()-last_time)/1000000.;
       last_time = micros();
       pitch_g = pitch_g + myICM.gyrX()*dt;
       roll_g = roll_g + myICM.gyrY()*dt;
       yaw_g = yaw_g + myICM.gyrZ()*dt;
+      Serial.print(", pitch_g:");
       Serial.print(pitch_g);
-      Serial.print(", ");
+      Serial.print(", roll_g:");
       Serial.print(roll_g);
-      Serial.print(", ");
-      Serial.println(yaw_g);
-      Serial.print(", ");
+      Serial.print(", yaw_g:");
+      Serial.print(yaw_g);
+      Serial.print(", pitch_a:");
       pitch_a = atan2(myICM.accY(),myICM.accZ())*180/M_PI;
       Serial.println(pitch_a);
 
-/*
-      //Slide 34, Gyroscope and Accelerometer
-      //print pitch_a, pitch_g, pitch
-      pitch = (pitch+myICM.gyrX()*dt)*0.9 + pitch_a*0.1;
-      Serial.print(", ");
-      Serial.println(pitch);
-*/
-/*
+
+      //Slide 38, Magnetic North
       Xm = myICM.magX();
       Ym = myICM.magY();
       Zm = myICM.magZ();
-      Serial.println(Xm);
-      //yaw = atan2(Xm,Ym)*180/M_PI;
-      //Serial.print(", ");
-      //Serial.println(yaw);
-*/
-/*
-      pitch_a = atan2(myICM.accY(),myICM.accZ())*180/M_PI;
-      dt = (micros()-last_time)/1000000.;
-      last_time = micros();
-      pitch_g = pitch_g + myICM.gyrX()*dt;
-      pitch = (pitch+myICM.gyrX()*dt)*0.9 + pitch_a*0.1;
-      roll_a  = atan2(myICM.accX(),myICM.accZ())*180/M_PI; 
-      roll_g = roll_g + myICM.gyrY()*dt;
-      roll = (roll+myICM.gyrY()*dt)*0.9 + roll_a*0.1;
+      Serial.print("lower_limit:");
+      Serial.print(-200);
+      Serial.print(", upper_limit:");
+      Serial.print(200);
+      Serial.print(", mag_x:");
+      Serial.print(Xm);
 
-      x = Ym*cos(roll*M_PI/180) - Zm*sin(roll*M_PI/180);
-      y = Xm*cos(pitch*M_PI/180) + Ym*sin(roll*M_PI/180)*sin(pitch*M_PI/180) + Zm*cos(roll*M_PI/180)*sin(pitch*M_PI/180);
-      yaw = atan2(y,x)*180/M_PI;
-      Serial.print(", ");
+      //Slide 39, determine yaw
+      yaw = atan2(Xm,Ym)*180/M_PI;
+      Serial.print(", yaw:");
       Serial.println(yaw);
 */
     }
