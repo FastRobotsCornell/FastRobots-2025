@@ -46,7 +46,7 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
 2. The accelerometer is noisy, especially when you run the RC car in its proximity. Record some of this data, and analyze the noise in the frequency spectrum. 
    - Here's a helpful tutorial to do a [Fourier Transform in Python](https://alphabold.com/fourier-transform-in-python-vibration-analysis/)
 3. Include a graph of Fourier Transform of your accelerometer data. Reason about what a good cutoff frequency is.
-   - Use this analysis to guide your choice of a low pass filter cut off frequency (recall implementation details from the [lecture](../lectures/FastRobots-4-IMU.pdf)). Discuss how the choice of cut-off frequency affects the output.
+   - Use this analysis to guide your choice of a low pass filter cut off frequency (recall implementation details from the [lecture](../lectures/FastRobots2025_Lecture4_SensorFusionIMU.pdf)). Discuss how the choice of cut-off frequency affects the output.
    - If there's little noise, check out the information on the chip and reason about why that might be. (Note, this may differ between kits).
    - Try inducing vibrational noice by setting your IMU on the lable and hitting the table (gently) with your hand or a text book. (Just enough to vibrate the table).
 4. Implement a simple lowpass filter on your accelerometer data.
