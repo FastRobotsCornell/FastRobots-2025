@@ -18,3 +18,4 @@
   * [python](https://www.pythoncheatsheet.org/#Python-Basics)
 * [Labs FAQ](FAQ.md)
 * [DMP Tutorial](dmp.md) (Credit to Stephan Wagner, ECE4160 student Spring 2024)
+* [CH340 Driver](CH340.md)
