@@ -13,6 +13,7 @@ The purpose of this lab is to equip the robot with distance sensors - the faster
 * 2 x [4m ToF sensor](https://www.pololu.com/product/3415)
 * 1 x [QWIIC Breakout board](https://www.sparkfun.com/products/18012) 
 * 2 x [Qwiic connector](https://www.sparkfun.com/products/14426)
+* 1 x 650mAh battery from the RC car
 * 1 x Ruler or graph paper
 * 1 x Wire strippers/ Mini cutters
 * 1 x Soldering iron
