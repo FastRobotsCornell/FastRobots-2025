@@ -3,52 +3,68 @@
 [Return to main page](./index.md)
 
 # Student Pages, Spring 2025
-* Rachel Arena
-* Kotey Ashie
-* Sarah Grace Brown
-* Jeffery Cai
-* Sana Chawla
-* Jorge Corpa Chung
-* Lucca Correia
-* Giacomo Cuomo
-* Trevor Dales
-* Aidan Derocher
-* Andrew Estes
-* Roberto Garcia
-* Lulu Htutt
-* Brooke Hudson
-* Paul Judge
-* Tony Kariuki
-* Nita Kattimani
-* Heisen Kong
-* Becky Lee
-* Annabel Lian
-* Ben Liao
-* Sophia Lin
-* Jack Long
-* Joshua McCrae
-* Aidan McNay
-* Anunth Ramaswami
-* Aravind Ramaswami
-* Jennie Redrovan
-* Ao Ruan
-* Aleira Sanchez
-* Ethan Sarpong
-* Josh Simpson
-* Vidhi Srivastava
-* Jack Strope
-* Albert Sun
-* Steven Sun
-* Hong Ray Teo
-* Devon Thomas
-* Akshati Vaishnav
-* Arnav Vasudev
-* Shuchang Wen
-* Tyler Wisniewski
-* Selena Yao
-* Adrienne Yoon
-* Haixi Zhang
-* Chengle Zheng
+* [Akinfolami Akin-Alamu](https://akinfelami.github.io/fastrobots-2025/)
+* [Rachel Arena]()
+* [Kotey Ashie](https://kotey538.github.io/fast_robots.github.io/)
+* [Giorgi Berndt](https://giocodez.github.io/ece5160_page/)
+* [Sarah Grace Brown](https://sgb1443.github.io/ece4160/)
+* [Jeffery Cai](https://jcai2565.github.io/)
+* [Henry Calderon](https://henrycc24.github.io/)
+* [Sana Chawla](https://sanac17.github.io/fastRobots/)
+* [Jorge Corpa Chung](https://jorgecorpa.github.io/FastRobots/)
+* [Lucca Correia](https://correial.github.io/)
+* [Giacomo Cuomo](https://giacomoyongcuomo.github.io/ece4160_Fast-Robots/)
+* [Trevor Dales](https://trevordales.github.io/)
+* [Aidan Derocher](https://boltstrike.github.io/index.html)
+* [Katarina Duric](https://kd374.github.io/ECE5160/)
+* [Andrew Estes](https://aee46.github.io/)
+* [Alexandra Friedman](https://alexfriedman39.github.io/alexfriedman39.fastrobots.github.io/)
+* [Roberto Garcia](https://rfg74.github.io/)
+* [Sabian Grier](https://sabiangrier.github.io/ECE5160-2025/)
+* [Katherine Hsu](https://neverlandiz.github.io/fast_robots/)
+* [Lulu Htutt](https://luluhtutt.github.io/FastRobots/)
+* [Ivan Huang](https://ivannnhuang.github.io/)
+* [Brooke Hudson](https://bh6326.github.io/)
+* [Paul Judge](https://pgj23.github.io/pgj23_ECE_4160/)
+* [Tony Kariuki](https://akk85.github.io/FastRobots-2025/)
+* [Nita Kattimani](https://nskatti1.github.io/Fast-Robots/)
+* [Heisen Kong](https://heisen-kong.github.io/)
+* [Becky Lee](https://bleev3.github.io/)
+* [Evan Leong](https://evnleong.github.io/MAE4190/)
+* [Annabel Lian](https://ayl48.github.io/FastRobots/)
+* [Ben Liao](https://bhl47fastrobots.github.io/fastrobots/)
+* [Sophia Lin](https://pages.github.coecis.cornell.edu/sl2383/ece5160-sl2383/)
+* [Yueming Liu](https://liuyuemingm.github.io/fast_robots.github.io/#page-top)
+* [Jack Long](https://jack-d-long.github.io)
+* [Peng-Ru Lung](https://pengrulung.github.io/ECE5160/)
+* [Joshua McCrae](http://joshuamccrae.github.io)
+* [Aidan McNay](https://aidan-mcnay.github.io/fast-robots-docs/)
+* [Anunth Ramaswami](https://anunth-r.github.io/Fast-Robots/)
+* [Aravind Ramaswami](https://aravind-ramaswami.github.io/arr229/)
+* [Jennie Redrovan](https://jennieredrovan44.github.io/J_redrovan/startbootstrap-resume-master/startbootstrap-resume-master/dist/index.html#about)
+* [Kelvin Resch](https://kelvinresch.github.io/)
+* [Ao Ruan](https://andyruanao.github.io/ECE-5140/)
+* [Aleira Sanchez](https://aleirasanchez.github.io/aleira.sanchez/)
+* [Ethan Sarpong](https://oesarpong.github.io)
+* [Josh Simpson](https://j-simp.github.io/fast-robots/)
+* [Vidhi Srivastava](https://vs356.github.io/fastrobots/)
+* [Jack Strope](https://jackstrope.github.io)
+* [Albert Sun](http://asun121.github.io/asun121-fast-robots/)
+* [Steven Sun](https://sts200.github.io/)
+* [Devon Thomas](https://devt1.github.io/)
+* [Dan Tran](https://danimalias.github.io/dht35.github.io/)
+* [Akshati Vaishnav](https://avaishnav1.github.io/fast-robots/)
+* [Arnav Vasudev](https://arvas123.github.io/fastrobots/)
+* [Angela Voo](https://vdeltat.github.io/FastRobots2025/)
+* [Shuchang Wen]()
+* [Noah Wilson](https://noahjosephwilson.github.io/ece4160/)
+* [Tyler Wisniewski](https://tylerwisniewski.github.io/fast-robot.html)
+* [Selena Yao](https://ssy37.github.io/)
+* [Rishi Yennu](https://rgtrio.github.io/RishiY-FastRobots/)
+* [Adrienne Yoon](https://ysadrienne.github.io)
+* [Haixi Zhang](https://haixizhang.github.io/FastRobot/)
+* [Sean Zhang](https://seanzhangw.github.io/ece4160/)
+* [Chengle Zheng](https://czzzle.github.io/Fast_Robots/)
 
 <!--
 * [Alex Allen](https://tripa2020.github.io) This is just for formatting
