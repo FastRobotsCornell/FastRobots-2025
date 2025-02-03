@@ -35,11 +35,6 @@ After installation, restart your computer and try installing the pip package aga
    1. You may need to open a CMD prompt with *C++ build tools* added to your **PATH**.
    2. You may need to update setup tools in some cases ([Ref](https://stackoverflow.com/questions/29846087/error-microsoft-visual-c-14-0-is-required-unable-to-find-vcvarsall-bat))
 
-#### 2. Connection issues in Windows 11.
-Some Windows 11 users are unable to connect to the Artemis board. Since Windows 11 is a fairly new OS (Released on Oct 5, 2021), it is likely to have compatibility issues with libraries/applications. Unfortunately, there is no known fix for this issue at the moment.
-
-You can use the lab computers for BLE related tasks. If you prefer using your personal computer, you may have to either downgrade to Windows 10, setup a new partition with Windows 10 (alongside Windows 11) or use a Virtual Machine. We can help you with these if you want. For some users, they can get BLE to work in python scripts; however Jupyter notebooks are recommended for novice Python programmers.
-
 ### macOS
 #### 1. Python throws an error about a missing library named **pyobc**.
 Some macOS versions may not have the library pre-installed. 
@@ -59,6 +54,9 @@ to
     IS_ATLEAST_MAC_OS_12 = True
 ```
 Why is this important? Well, they also modified the Bluetooth API in macOS 12. The provided basecode checks for the macOS version number and handles the Bluetooth API accordingly. Unfortunately, it does not account for this bug in some machines, where a macOS 12 might report its version number as "10.16".
+
+#### 3. Programming issues in macOS 14+.
+TLDR: Update the SVL executable following the process described [here](./CH340.md).
 
 ## Artemis
 #### 1. The ToF sensors don't provide consistent values.
