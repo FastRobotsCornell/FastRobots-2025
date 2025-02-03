@@ -38,7 +38,7 @@ After installation, restart your computer and try installing the pip package aga
 ### macOS
 #### 1. Python throws an error about a missing library named **pyobc**.
 Some macOS versions may not have the library pre-installed. 
-In a CLI, activate the virtual enviroment and install the package using the following command:
+In Terminal, install the package using the following command:
 ```bash
 python3 -m pip install pyobjc
 ```
