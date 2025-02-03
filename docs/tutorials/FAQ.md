@@ -21,13 +21,8 @@ More info on exceptions and exception handling can be found [here](https://realp
 2. In your final code, remove unnecessary interim variables.
 3. Prevent printing excessive messages to the serial port.
 
-#### 5. How do I generate new UUIDs?
-There are many ways to do this, but as a programmer why not use some programming tools?
-   ```python
-   from uuid import uuid4
-   uuid4()
-   ```
-NOTE: There are some reserved UUIDs in the bluetooth specification and steer away from them. (Reserved UUID: https://www.novelbits.io/uuid-for-custom-services-and-characteristics/)
+#### 5. I've generated a UUID and it doesn't seem to be working?
+There are some reserved UUIDs in the bluetooth specification and steer away from them. (Reserved UUID: https://www.novelbits.io/uuid-for-custom-services-and-characteristics/)
 
 
 ### Windows
