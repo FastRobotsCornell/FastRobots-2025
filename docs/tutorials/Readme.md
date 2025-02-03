@@ -1,6 +1,4 @@
-# ECE 4960/5960
-
-## Cornell, Spring 2025
+# Fast Robots @ Cornell, Spring 2025
 
 ### Tutorials and Helpful Resources
 
