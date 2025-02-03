@@ -8,7 +8,9 @@ Match the baud rate on your serial monitor with the value specified in the Ardui
 ####  2. My ArduinoIDE fails to upload the sketch.
 1. Try a different USB port.
 2. Connect the Artemis board directly to a USB port and not through a USB dongle.
-3. Try again :).
+3. Lower the baud rate.
+4. Follow the [CH340 tutorial](./CH340.md)
+5. Try again :).
 
 #### 3. How to read a python exception?
 When python throws an exception, it first displays the code traceback and then finally the Exception message. Read the exception message at the bottom and use the traceback to find the line of code that triggered the exception.
