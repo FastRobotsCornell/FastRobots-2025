@@ -36,7 +36,7 @@ Finally, please skim the lab instructions in order to be prepared for what to do
     1. Bad physical connections, because the USB connector needs to be pressed fully into the Artemis board.
     2. If you are running Windows and the first compilation takes a long time, try adding "C:\Program Files\Arduino" (or the particular project folder) to the antivirus exclusions.
     3. Switch from the SVL bootloader to the Ambiq bootloader. (Note: this will prevent future SVL bootloads without reburning the SVL bootloader, so be careful!)
-    4. If the bootloader cannot connect, you will need to [update the CH340 Driver](./tutorials/CH340.md).
+    4. If the bootloader cannot connect, you will need to [update the CH340 Driver](../tutorials/CH340.md).
 
 2. In File->Examples->01.Basics, run Blink. (Note: you may need to slow the baud rate down for it to work.)
 3. In File->Examples->Apollo3, run Example4_Serial. (Note: to view the output and provide input open the serial monitor in the upper right hand corner of the script window, again check the baud rate.)
