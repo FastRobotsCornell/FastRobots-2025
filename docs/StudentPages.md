@@ -4,7 +4,7 @@
 
 # Student Pages, Spring 2025
 * [Akinfolami Akin-Alamu](https://akinfelami.github.io/fastrobots-2025/)
-* [Rachel Arena]()
+* [Rachel Arena](https://rga47-lab.github.io)
 * [Kotey Ashie](https://kotey538.github.io/fast_robots.github.io/)
 * [Giorgi Berndt](https://giocodez.github.io/ece5160_page/)
 * [Sarah Grace Brown](https://sgb1443.github.io/ece4160/)
@@ -66,9 +66,6 @@
 * [Sean Zhang](https://seanzhangw.github.io/ece4160/)
 * [Chengle Zheng](https://czzzle.github.io/Fast_Robots/)
 
-<!--
-* [Alex Allen](https://tripa2020.github.io) This is just for formatting
--->
 ---
 * [2024 Student pages](https://fastrobotscornell.github.io/FastRobots-2024/StudentPages.html)
 * [2023 Student pages](https://cei-lab.github.io/FastRobots-2023/StudentPages.html)
