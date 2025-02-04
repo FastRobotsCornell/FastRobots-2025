@@ -71,14 +71,14 @@ Finally, please skim the lab instructions so you are ready to hit the road when 
 2. Similar to Lab 1, collect and store time-stamped IMU data in arrays. Do this in your main loop using flags to start/stop data recording. 
 
 3. Think about how you store your data:
-   - Consider if it makes sense to have one big array, or separate arrays for storing ToF, Accelerometer, and Gyroscope data, argue for your choice
+   - Consider if it makes sense to have one big array, or separate arrays for storing Accelerometer and Gyroscope data, argue for your choice
    - Consider the best data type to store your data. Should you use string, floats, double, integers? Justify your decision.
    - Consider the memory of the Artemis; how much memory can you allocate to your arrays? What does that correspond to in seconds?
 
 4. Demonstrate that your board can capture at least 5s worth of IMU data and send it over Bluetooth to the computer.
   
 <!---
-#### Cut the Coord!
+#### Cut the Cord!
 
 5. Unplug the USB C cable from the Artemis, and connect a battery instead. You have two batteries available. One is 3.7V 850mAh, you will use this one to power the motors through the motor drivers. The other is 3.7V 650mAh and comes with the RC car, you will use this one to power the digital electronics (Artemis, sensors, etc.).
    - Consider why we are asking you to use the battery with more capacity to drive the motors. 
@@ -133,7 +133,7 @@ This is not a strict requirement, but may be helpful in understanding what shoul
    * Sample Data
      * Speed of sampling discussion
      * Demonstrate collected and stored time-stamped IMU data in arrays
-     * Demonstrate 5s of ToF and IMU data sent over Bluetooth
+     * Demonstrate 5s of IMU data sent over Bluetooth
    * Record a Stunt
       * Include a video (or some videos) of you playing with the car and discuss your observations
 
