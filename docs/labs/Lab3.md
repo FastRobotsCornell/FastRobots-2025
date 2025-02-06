@@ -22,9 +22,9 @@ The purpose of this lab is to equip the robot with distance sensors - the faster
 
 In this lab, we will setup a Time-of-Flight (ToF) sensor, which is based on the VL53L1X. Please skim the [manual](https://cdn.sparkfun.com/assets/e/1/8/4/e/VL53L1X_API.pdf), and check out the [datasheet](https://cdn.sparkfun.com/assets/8/9/9/a/6/VL53L0X_DS.pdf) before beginning this lab. Note the sensor I2C address.
 
-Eventually, we will use two ToF sensors. The address of the sensor is hardwired on the board which means you cannot (as is) address the two sensors individually. You can change the address programmatically (while powered) or you can enable the two sensors separately through their shutdown pins. Decide and argue for which approach you want to use (and how you will do this). Given their range and angular sensitivity, think about where you will place them on your robot to best detect obstacles in future labs. Discuss scenarios where your robot will miss obstacles. 
+We will use two ToF sensors. The address of the sensor is hardwired on the board which means you cannot (as is) address the two sensors individually. You can change the address programmatically (while powered) or you can continuously enable/disable the two sensors separately through their shutdown pins. Decide and argue for which approach you want to use (and how you will do this). Given their range and angular sensitivity, think about where you will place them on your robot to best detect obstacles in future labs. Discuss scenarios where your robot will miss obstacles. 
 
-To help you get through the lab, consider using SerialPlot in the Arduino IDE to help visualize the data.
+As always, you can use SerialPlot in the Arduino IDE or an external serial plotter to help visualize the data.
 
 ***Think ahead!***
 
@@ -78,15 +78,17 @@ While you can choose to ignore the robot in this lab, you will have to permanent
    - The distanceSensor.checkForDataReady() routine can be called to check when new data is available.
    - How fast does your loop execute, and what is the current limiting factor?
 
-10. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data for a set period of time, and then send it over Bluetooth to your computer.
+10. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data and IMU data for a set period of time, and then send it over Bluetooth to your computer.
     
-11. Include a plot of the ToF data against time. 
+11. Include a plot of the ToF data against time.
+    
+12. Include a plot of the IMU data against time.
    
 
 
 ### Additional tasks for 5000-level students:
 
-12. Many distance sensors are based on infrared trasmission. 
+13. Many distance sensors are based on infrared trasmission. 
    - Discuss a couple, highlight the differences in their fuctionality and the pros/cons of each. 
    - Check and discuss whether the ToF sensor is sensitive to different colors and textures. 
 
@@ -111,6 +113,7 @@ This is not a strict requirement, but may be helpful in understanding what shoul
   * 2 ToF sensors: Discussion and screenshot of sensors working in parallel
   * Tof sensor speed: Discussion on speed and limiting factor; include code snippet of how you do this
   * Time v Distance: Include graph of data sent over bluetooth (2 sensors)
+  * Time v Angle: Include graph of data sent over bluetooth
   * (5000) Discussion on infrared transmission based sensors
   * (5000) Sensitivity of sensors to colors and textures
 
