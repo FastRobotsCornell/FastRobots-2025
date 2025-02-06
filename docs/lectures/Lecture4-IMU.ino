@@ -57,31 +57,30 @@ void loop() {
     {
       myICM.getAGMT();                // The values are only updated when you call 'getAGMT'
 
-
+/*
       //Slide 20 Accelerometer introduction
-     
+    
       //NB: Setup Serialplot Y axis [-2000 2000]
       Serial.print("lower_limit:");
       Serial.print(-2500);
       Serial.print(", upper_limit:");
       Serial.print(2500);
       Serial.print(", acc_x:"); 
-      Serial.print("acc_x:")
       Serial.print( myICM.accX() );
       Serial.print(", acc_y:");
       Serial.print( myICM.accY() );
       Serial.print(", acc_z:");
       Serial.println( myICM.accZ() );
       
-/*
+
       //Slide 24, accelerometer
       //NB: Setup Serialplot Y axis [-180 180]
         Serial.print("lower_limit:");
         Serial.print(-200);
         Serial.print(", upper_limit:");
         Serial.print(200);
-        pitch_a = atan2(myICM.accY(),myICM.accZ())*180/M_PI; 
-        roll_a  = atan2(myICM.accX(),myICM.accZ())*180/M_PI; 
+        pitch_a = atan2(myICM.accX(),myICM.accZ())*180/M_PI; 
+        roll_a  = atan2(myICM.accY(),myICM.accZ())*180/M_PI; 
         Serial.print(", pitch_a:");
         Serial.print(pitch_a);
         Serial.print(", roll_a:");
@@ -89,15 +88,15 @@ void loop() {
         Serial.print(roll_a); //FOR THE THIRD DEMO, COMMENT OUT LINE FOR SECOND DEMO
         
   
-  
+ 
       //Slide 25, LPF
-      //Tilt along y-axis
+      //Tilt around y-axis
       const float alpha = 0.02;
       pitch_a_LPF[n] = alpha*pitch_a + (1-alpha)*pitch_a_LPF[n-1];
       pitch_a_LPF[n-1] = pitch_a_LPF[n];
       Serial.print(", pitch_LPF:");
       Serial.println(pitch_a_LPF[n]);
-  
+ */
 
       //Slide 32, Gyroscope
       Serial.print("lower_limit:");
@@ -116,10 +115,10 @@ void loop() {
       Serial.print(", yaw_g:");
       Serial.print(yaw_g);
       Serial.print(", pitch_a:");
-      pitch_a = atan2(myICM.accY(),myICM.accZ())*180/M_PI;
+      pitch_a = atan2(myICM.accX(),myICM.accZ())*180/M_PI;
       Serial.println(pitch_a);
 
-
+/*
       //Slide 38, Magnetic North
       Xm = myICM.magX();
       Ym = myICM.magY();
