@@ -43,7 +43,6 @@
 * [Aravind Ramaswami](https://aravind-ramaswami.github.io/arr229/)
 * [Jennie Redrovan](https://jennieredrovan44.github.io/J_redrovan/startbootstrap-resume-master/startbootstrap-resume-master/dist/index.html#about)
 * [Kelvin Resch](https://kelvinresch.github.io/)
-* [Ao Ruan](https://andyruanao.github.io/ECE-5140/)
 * [Aleira Sanchez](https://aleirasanchez.github.io/aleira.sanchez/)
 * [Ethan Sarpong](https://oesarpong.github.io)
 * [Josh Simpson](https://j-simp.github.io/fast-robots/)
