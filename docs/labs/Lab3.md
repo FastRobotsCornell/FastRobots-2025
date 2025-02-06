@@ -11,8 +11,9 @@ The purpose of this lab is to equip the robot with distance sensors - the faster
 * 1 x [SparkFun RedBoard Artemis Nano](https://www.sparkfun.com/products/15443)
 * 1 x [USB cable](https://www.amazon.com/SUMPK-Charging-Braided-Compatible-Samsung/dp/B08R68T84N/ref=sr_1_4?keywords=usb+c+to+c&qid=1636380583&qsid=147-6677549-1776715&refinements=p_n_feature_ten_browse-bin%3A23555327011&rnid=23555276011&s=pc&sr=1-4&sres=B08D9SB161%2CB08R68T84N%2CB01CZVEUIE%2CB01FM51812%2CB07VCZV3R4%2CB075V68NVR%2CB075GMKZWW%2CB093BVBRJT%2CB09BBBJ33F%2CB09C2D9Z7T%2CB012V56D2A%2CB092CYFQMP%2CB081L4V3DN%2CB07Y6ZJT1D%2CB07Y2XKPX5%2CB07VPYJV8V%2CB07THJGZ9Z%2CB08W2TP2TT%2CB0744BKDRD%2CB07THFJ1J5&srpt=ELECTRONIC_CABLE)
 * 2 x [4m ToF sensor](https://www.pololu.com/product/3415)
+* 1 x [9DOF IMU](https://)
 * 1 x [QWIIC Breakout board](https://www.sparkfun.com/products/18012) 
-* 2 x [Qwiic connector](https://www.sparkfun.com/products/14426)
+* 3 x [Qwiic connector](https://www.sparkfun.com/products/14426)
 * 1 x 650mAh battery from the RC car
 * 1 x Ruler or graph paper
 * 1 x Wire strippers/ Mini cutters
