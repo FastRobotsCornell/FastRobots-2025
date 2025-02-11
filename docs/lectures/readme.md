@@ -12,7 +12,7 @@ Lecture slides will be uploaded on this page.
 * [Lecture 4 - Sensors II / IMU](./FastRobots2025_Lecture4_SensorFusionIMU.pdf), [code](./Lecture4-IMU.ino)
 * [Lecture 5 - EMI and Wiring](./FastRobots2025_Lecture5_EMIRouting.pdf), [worksheet](./Hardware_worksheet.pdf)
 * [Lecture 6 - Batteries and Actuators](./FastRobots2025_Lecture6_BatteryActuator.pdf)
-* Lecture 7 - PID control
+* [Lecture 7 - PID control](./FastRobots2025_Lecture7_PID.pdf)
 * Lecture 8 - PID control, continued, worksheet <!--(https://bit.ly/3LIAxae)-->
 * Lecture 9 - Linear systems, recap
 * Lecture 10 - Controllability
