@@ -59,7 +59,8 @@ While you can choose to ignore the robot in this lab, you will have to permanent
    - Go to File->Examples->Apollo3->Wire and open Example1_wire_I2C
    - Browse through the code to see how to use i2c commands. 
    - Run the code. Does the address match what you expected? If not, explain why.
-6. The ToF sensor has three modes, that optimize the ranging performance given the maximum expected range. Discuss the pros/cons of each mode, and think about which one could work on the final robot.
+6. The ToF sensor has three modes (Short, Medium, and Long) that optimize the ranging performance given the maximum expected range. Discuss the pros/cons of each mode, and think about which one could work on the final robot. (Note: medium mode is only available with the [Polulu VL53L1X Library](https://github.com/pololu/vl53l1x-arduino.git)).
+   
    <code><pre>
    .setDistanceModeShort();  //1.3m
    .setDistanceModeMedium(); //3m
@@ -72,18 +73,18 @@ While you can choose to ignore the robot in this lab, you will have to permanent
    - The figure below is an example from 2020, when students measured the accuracy and repeatability in different lighting conditions, and timing for various code setups (these are not all required tasks for this year), however, we highly recommend generating your plots in the Jupyter notebook to gain more familiarity with the environment, e.g. using [matplotlib](https://matplotlib.org/).    
    <p align="center"><img src="../Figs/ToF_characterization.png" width="700"></p>
 
-8. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both work. 
+9. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both work. 
    - Don't use the Example1_wire code to do this, it works poorly when multiple sensors are attached.  
 
-9. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when available.
+10. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when available.
    - The distanceSensor.checkForDataReady() routine can be called to check when new data is available.
    - How fast does your loop execute, and what is the current limiting factor?
 
-10. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data and IMU data for a set period of time, and then send it over Bluetooth to your computer.
+11. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data and IMU data for a set period of time, and then send it over Bluetooth to your computer.
     
-11. Include a plot of the ToF data against time.
+12. Include a plot of the ToF data against time.
     
-12. Include a plot of the IMU data against time.
+13. Include a plot of the IMU data against time.
    
 
 
