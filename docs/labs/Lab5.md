@@ -36,8 +36,8 @@ For this task, you will have your robot drive as fast as possible (given the qua
 
 Beyond the considerations mentioned above, think about the following:
    - Given the range of motor input values and the output from your TOF sensor, discuss what a reasonable range of the proportional controller gain will be. 
-   - Consider the range and sampling time you choose for your TOF sensor; it may be worth lowering the accuracy for faster updates. Note that the medium range is only available if you are using the ([ToF Pololu library](https://github.com/pololu/vl53l0x-arduino)). 
-   - Also note that the sensor has a programmable integration time. If this is set too high, you will see large jumps in your data as the robot drives and you can no longer assume that the measurements are independent. You can lower the integration time (trading off accuracy for speed) using: `proximitySensor.setProxIntegrationTime(4); //A value of 1 to 8 is valid`. Again this function is only available in the [Tof Pololu library](https://github.com/pololu/vl53l0x-arduino).
+   - Consider the range and sampling time you choose for your TOF sensor; it may be worth lowering the accuracy for faster updates. Note that the medium range is only available if you are using the ([ToF Pololu library](https://github.com/pololu/vl53l1x-arduino.git)). 
+   - Also note that the sensor has a programmable integration time. If this is set too high, you will see large jumps in your data as the robot drives and you can no longer assume that the measurements are independent. You can lower the integration time (trading off accuracy for speed) using: `proximitySensor.setProxIntegrationTime(4); //A value of 1 to 8 is valid`. Again this function is only available in the [Tof Pololu library](https://github.com/pololu/vl53l1x-arduino.git).
 
 Below you can see an example of a simple PI controller acting on the TOF signal.
 
