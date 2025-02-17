@@ -37,7 +37,6 @@
 * [Yueming Liu](https://liuyuemingm.github.io/fast_robots.github.io/#page-top)
 * [Jack Long](https://jack-d-long.github.io)
 * [Peng-Ru Lung](https://pengrulung.github.io/ECE5160/)
-* [Joshua McCrae](http://joshuamccrae.github.io)
 * [Aidan McNay](https://aidan-mcnay.github.io/fast-robots-docs/)
 * [Anunth Ramaswami](https://anunth-r.github.io/Fast-Robots/)
 * [Aravind Ramaswami](https://aravind-ramaswami.github.io/arr229/)
@@ -63,7 +62,6 @@
 * [Adrienne Yoon](https://ysadrienne.github.io)
 * [Haixi Zhang](https://haixizhang.github.io/FastRobot/)
 * [Sean Zhang](https://seanzhangw.github.io/ece4160/)
-* [Chengle Zheng](https://czzzle.github.io/Fast_Robots/)
 
 ---
 * [2024 Student pages](https://fastrobotscornell.github.io/FastRobots-2024/StudentPages.html)
