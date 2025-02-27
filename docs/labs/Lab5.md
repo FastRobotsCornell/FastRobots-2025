@@ -53,7 +53,7 @@ Below you can see an example of a simple PI controller acting on the TOF signal.
    - _Derivative LPF:_ If you include a derivative, consider whether it is necessary to include a low pass filter in the derivative branch. 
    - _Derivative kick:_ Consider whether the derivative kick can cause any issues, given the task you choose. Here is a great overview on how to eliminate derivative kick: http://brettbeauregard.com/blog/2011/04/improving-the-beginner’s-pid-derivative-kick/
    - _Anything goes:_ The goal is a working system. When you have a reasonable control setup working, you should feel free to add any "hacks" that will improve your robot performance in a reliable way. If you don't have time to implement them, discussing what you imagine would help can still get you points. 
-   - _Motor drivers:_ Recall [Lecture 6 on Actuators](./lectures/FastRobots2025_Lecture6_BatteryActuator) and that the motor drivers have both coasting and active braking modes. These might come in handy.
+   - _Motor drivers:_ Recall [Lecture 6 on Actuators](../lectures/FastRobots2025_Lecture6_BatteryActuator) and that the motor drivers have both coasting and active braking modes. These might come in handy.
 
 <img src="../Figs/Lab6_TaskA_PIcontrol_example.png" width="400">
 
