@@ -20,8 +20,8 @@ We will have a few setups in and just outside of the labs with crash-pillows mou
 ### 1. Estimate drag and momentum 
 
 To build the state space model for your system, you will need to estimate the drag and momentum terms for your A and B matrices. Here, we will do this using a step response. Drive the car towards a wall at a constant imput motor speed while logging motor input values and ToF sensor output. 
-  1. Choose your step responce, u(t), to be of similar size to the PWM value you used in Lab 6 (to keep the dynamics similar). Pick something between 50%-100% of the maximum u.  
-  2. Make sure your step time is long enough to reach steady state (you likely have to use active breaking of the car to avoid crashing into the wall). Make sure to use a peice of foam to avoid hitting to wall and damaging your car.
+  1. Choose your step responce, u(t), to be of similar size to the PWM value you used in Lab 5 (to keep the dynamics similar). Pick something between 50%-100% of the maximum u.  
+  2. Make sure your step time is long enough to reach steady state (you likely have to use active braking of the car to avoid crashing into the wall). Make sure to use a peice of foam to avoid hitting to wall and damaging your car.
   3. Show graphs for the TOF sensor output, the (computed) speed, and the motor input. Please ensure that the x-axis is in seconds.
   4. Measure the steady state speed, 90% rise time, and the speed at 90% risetime. (Note, this doesn't have to be 90% rise time. You could also use somewhere between 60-90%, but the speed and time must correspond to get an accurate estimate for m. 
   5. When sending this data back to your laptop, make sure to save the data in a file so that you can use it even after your Jupyter kernal restarts. Consider writing the data to a [CSV](https://docs.python.org/3/library/csv.html) file, [pickle file](https://docs.python.org/3/library/pickle.html), or [shelve file](https://docs.python.org/3/library/pickle.html). 
@@ -80,7 +80,7 @@ def kf(mu,sigma,u,y):
 
 ### Additional tasks for 5000-level students
 
-Run your Kalman filter at a faster frequency than the ToF readings. In between readings, use the prediction step to estimate the state of the car. Similar to the linear extrapolation step from lab 6, but use the prediction step of your Kalman filter instead. 
+Run your Kalman filter at a faster frequency than the ToF readings. In between readings, use the prediction step to estimate the state of the car. Similar to the linear extrapolation step from lab 5, but use the prediction step of your Kalman filter instead. 
 
 Make sure to use the appropriate delta t when discretizing the A and B matrices. 
 
@@ -105,9 +105,6 @@ Matrix<2,2> A = {1, 1,
 state(1,0) = 1;                    //Writes only location 1 in the 2x1 matrix.
 Sigma_p = Ad*Sigma*~Ad + Sigma_u;  //Example of how to compute Sigma_p (~Ad equals Ad transposed) 
 ```
-
-
-You're off the hook in this lab.
 
 ---
 
