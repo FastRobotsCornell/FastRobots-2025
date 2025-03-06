@@ -78,15 +78,7 @@ def kf(mu,sigma,u,y):
     return mu,sigma
 ```
 
-### Additional tasks for 5000-level students
-
-Run your Kalman filter at a faster frequency than the ToF readings. In between readings, use the prediction step to estimate the state of the car. Similar to the linear extrapolation step from lab 5, but use the prediction step of your Kalman filter instead. 
-
-Make sure to use the appropriate delta t when discretizing the A and B matrices. 
-
-Plot the results.
-
-### Extra Credit: Implement the Kalman Filter on the Robot (Optional, for up to 10 bonus points!)
+### 4. Implement the Kalman Filter on the Robot (Optional, for up to 10 bonus points!)
 
 If you have time, integrate the Kalman Filter into your Lab 6 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Make sure to remove the linear extrpolation step before doing this. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
 
@@ -105,6 +97,10 @@ Matrix<2,2> A = {1, 1,
 state(1,0) = 1;                    //Writes only location 1 in the 2x1 matrix.
 Sigma_p = Ad*Sigma*~Ad + Sigma_u;  //Example of how to compute Sigma_p (~Ad equals Ad transposed) 
 ```
+
+### 5. Speed it up (optional)
+
+If you have time, and want to get a jump start on Lab 8, try speeding up your robot with your KF to decrease the execution time of your control loop.
 
 ---
 
