@@ -82,8 +82,6 @@ def kf(mu,sigma,u,y):
 
 If you have time, integrate the Kalman Filter into your Lab 5 PID solution on the Artemis. Before trying to increase the speed of your controller, use your debugging script to verify that your Kalman Filter works as expected. Make sure to remove the linear extrpolation step before doing this. Be sure to demonstrate that your solution works by uploading videos and by plotting corresponding raw and estimated data in the same graph. 
 
-If you have even more time, Rather than use linear extrapolation to estimate the position of the car between ToF readings, use the prediction step of the Kalman filter. 
-
 The following code snippets gives helpful hints on how to do matrix operations on the robot:
 
 ```cpp
