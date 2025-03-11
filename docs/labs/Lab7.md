@@ -100,6 +100,10 @@ Sigma_p = Ad*Sigma*~Ad + Sigma_u;  //Example of how to compute Sigma_p (~Ad equa
 
 If you have time, and want to get a jump start on Lab 8, try speeding up your robot with your KF to decrease the execution time of your control loop.
 
+### Additional Tasks for 5000-level students
+
+You are off the hook for this lab!
+
 ---
 
 ## Write-up
