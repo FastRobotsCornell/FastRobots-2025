@@ -19,7 +19,7 @@ Lecture slides will be uploaded on this page.
 * [Lecture 11 - Controllability/LQR](./FastRobots2025_Lecture11_Controllabilitycont.pdf), [Inverted Pendulum Github Repository](https://github.com/bertozzijr/Control_Bootcamp_S_Brunton)
 * [Lecture 12 - Probability and Bayes Theorem](./FastRobots-12-Probability_BayesTheorem.pdf), many thanks to Prof. Petersen for the guest lecture!
 * [Lecture 13 - Observability and Kalman Filters](./FastRobots2025_Lecture13_Observability.pdf)
-* Lecture 14 - Local Planning and Map Representations
+* [Lecture 14 - KF cont., Local Planning](./FastRobots2025_Lecture14_KFcont.pdf)
 * Lecture 15 - Maps, Graph construction and Graph search
 * Lecture 16 - Markov and Bayes Filter I
 * Lecture 17 - Motion models
