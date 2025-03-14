@@ -55,7 +55,6 @@
 * [Arnav Vasudev](https://arvas123.github.io/fastrobots/)
 * [Angela Voo](https://vdeltat.github.io/FastRobots2025/)
 * [Shuchang Wen](https://nanshanvv.github.io/FastRobots/)
-* [Noah Wilson](https://noahjosephwilson.github.io/ece4160/)
 * [Tyler Wisniewski](https://tylerwisniewski.github.io/fast/)
 * [Selena Yao](https://ssy37.github.io/)
 * [Rishi Yennu](https://rgtrio.github.io/RishiY-FastRobots/)
