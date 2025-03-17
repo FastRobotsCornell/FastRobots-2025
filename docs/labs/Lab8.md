@@ -16,7 +16,7 @@ Your grade will be based partially on your hardware/software design and partiall
 
 ### Controlled Stunts
 
-Pick one of the following tasks. All of the related stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
+Pick one of the following tasks **(Note: we've noticed that drifting is easier than flipping in prior years)**. All of the related stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
 
 #### Task A: Flip
 
