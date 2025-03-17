@@ -16,9 +16,9 @@ Your grade will be based partially on your hardware/software design and partiall
 
 ### Controlled Stunts
 
-Pick one of the following tasks, according to what you picked in lab 6. All of the related stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
+Pick one of the following tasks. All of the related stunts must be performed on the tracks setup in the lab (or hallway outside of the lab). We have set up crash pads which should help prevent excessive damage when vehicles go rogue. We will need video evidence that your stunt works at least three times, and graphs showing the sensor data, KF output (if applicable), and motor values with time stamps. 
 
-#### Task A: Position Control
+#### Task A: Flip
 
 Your robot must start at the designated line (<4m from the wall), drive fast forward, and upon reaching the sticky matt with a center located 0.5m from the wall, perform a flip, and drive back in the direction from which it came. 
    - Your stunt will be considered successful if your robot manages to do a flip. The score will depend on how quickly (if at all) you make it back past the initial starting line. If your robot runs off at an angle without re-crossing the starting line this is a failed run. 
@@ -29,7 +29,7 @@ Your robot must start at the designated line (<4m from the wall), drive fast for
 [![Lab 8, Task A](https://img.youtube.com/vi/cffupvOlyUM/1.jpg)](https://youtu.be/cffupvOlyUM "Lab 8, Task A")
 
 
-#### Task B: Orientation Control
+#### Task B: Drift
 
 Your robot must start at the designated line (<4m from the wall), drive fast forward, and when the robot is within 3ft (914mm = 3 floor tiles in the lab) from the wall, initiate a 180 degree turn. 
    - The TOF sensors are not all calibrated equally well; manually tuning the distance to the wall for which your robot initiates the turn is fine.
@@ -39,7 +39,7 @@ Your robot must start at the designated line (<4m from the wall), drive fast for
 
 ### Extra credit for coolest stunt and best bloopers!
 
-Everyone, including your teaching team, will be the chance to vote for the coolest stunt video and the best blooper. We will send you a link to vote after Spring break. The highest scores will be given up to 2 extra credits!
+Everyone, including your teaching team, will be given the chance to vote for the coolest stunt video and the best blooper. We will send you a link to vote after Spring break. The highest scores will be given up to 2 extra credit points!
 
 ---
 
