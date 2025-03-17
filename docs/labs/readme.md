@@ -11,7 +11,7 @@
 * [Lab 5: Linear PID and Linear Interpolation](./Lab5.md)
 * [Lab 6: Orientation PID](./Lab6.md)
 * [Lab 7: Kalman Filtering](./Lab7.md)
-* Lab 8: Stunts!
+* [Lab 8: Stunts!](./Lab8.md)
 * Lab 9: Mapping
 * Lab 10: Localization (sim)
 * Lab 11: Localization (real)
