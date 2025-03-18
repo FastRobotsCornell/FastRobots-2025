@@ -21,14 +21,12 @@ Lecture slides will be uploaded on this page.
 * [Lecture 13 - Observability and Kalman Filters](./FastRobots2025_Lecture13_Observability.pdf)
 * [Lecture 14 - KF cont., Local Planning](./FastRobots2025_Lecture14_KFcont.pdf)
 * [Lecture 15 - Maps, Graph construction](./FastRobots2025_Lecture15_mapsgraphs.pdf)
-* Lecture 16 - Graph Search, Markov and Bayes Filter I
-* Lecture 17 - Motion models
-* Lecture 18 - Sensor models
-* Lecture 19 - Bayes Filter II
-* Lecture 20 - Simulator
-* Lecture 21 - Particle Filters and intro to SLAM, [Video Lecture from 2023](https://www.youtube.com/watch?v=C0uK62BhDxA)
-* Lecture 22 - Ethics I
-* Lectures 23 - Ethics II
-
-
-
+* [Lecture 16 - Graph Search](./FastRobots2025_Lecture16_graphsearch.pdf)
+* Lecture 17 - Markov and Bayes Filter I
+* Lecture 18 - Motion models
+* Lecture 19 - Sensor models
+* Lecture 20 - Bayes Filter II
+* Lecture 21 - Simulator
+* Lecture 22 - Particle Filters and intro to SLAM, [Video Lecture from 2023](https://www.youtube.com/watch?v=C0uK62BhDxA)
+* Lecture 23 - Ethics I
+* Lectures 24 - Ethics II
