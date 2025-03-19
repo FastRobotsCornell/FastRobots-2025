@@ -24,7 +24,7 @@ To build the state space model for your system, you will need to estimate the dr
   2. Make sure your step time is long enough to reach steady state (you likely have to use active braking of the car to avoid crashing into the wall). Make sure to use a peice of foam to avoid hitting to wall and damaging your car.
   3. Show graphs for the TOF sensor output, the (computed) speed, and the motor input. Please ensure that the x-axis is in seconds.
   4. Measure the steady state speed, 90% rise time, and the speed at 90% risetime. (Note, this doesn't have to be 90% rise time. You could also use somewhere between 60-90%, but the speed and time must correspond to get an accurate estimate for m. 
-  5. When sending this data back to your laptop, make sure to save the data in a file so that you can use it even after your Jupyter kernal restarts. Consider writing the data to a [CSV](https://docs.python.org/3/library/csv.html) file, [pickle file](https://docs.python.org/3/library/pickle.html), or [shelve file](https://docs.python.org/3/library/pickle.html). 
+  5. When sending this data back to your laptop, make sure to save the data in a file so that you can use it even after your Jupyter kernal restarts. Consider writing the data to a [CSV](https://docs.python.org/3/library/csv.html) file, [pickle](https://docs.python.org/3/library/pickle.html) file, or [shelve](https://docs.python.org/3/library/shelve.html) file. 
 
 ### 2. Initialize KF (Python)
 
