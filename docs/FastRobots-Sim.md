@@ -24,10 +24,10 @@ In robotics, *ground truth* is the most accurate measurement available. New meth
 For the virtual robot, ground truth is the exact position of your virtual robot within the simulator.
 
 #### Virtual Robot
-The virtual robot does has a (simulated) constant speed controller and odometry pose estimation built in. It essentially mimics an idealized version of the real robot.
+The virtual robot has a (simulated) constant speed controller and odometry pose estimation built in. It essentially mimics an idealized version of the real robot.
 
 ### 2. Plotter
-The 2d plotting tool is a lightweight process that allows for live asynchronous plotting of multiple scatter plots using Python. The Python API to plot points is described in the Jupyter notebook. It allows you to plot the odometry and ground truth poses. It also allows you to plot the map (as line segments) and robot belief in future labs. Play around with the various GUI buttons to familiarize yourself with the tool; you want to be more familiar with the tools before you get into the future labs. 
+The 2D plotting tool is a lightweight process that allows for live asynchronous plotting of multiple scatter plots using Python. The Python API to plot points is described in the Jupyter notebook. It allows you to plot the odometry and ground truth poses. It also allows you to plot the map (as line segments) and robot belief in future labs. Play around with the various GUI buttons to familiarize yourself with the tool; you want to be more familiar with the tools before you get into the future labs. 
 
 ### 3. Controller
 You will be programming the controller in Python to perform various functions on your virtual robot. We provide you with a Python API which, among other things, provides a minimal control interface for the robot in the simulator. It allows you to:
@@ -63,7 +63,7 @@ This is a reminder to upgrade python (3.10 for Windows/Mac, 3.9 for Linux/WSL) a
 </ol>
 
 #### Install Python Dependencies
-If you just upgraded your Python version and used an older version in Lab2, then the virtual environment created in Lab 2 will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab1](Lab1.md) to setup your new virtual environment and reinstall the packages from Lab 2.
+If you just upgraded your Python version and used an older version in Lab1B, then the virtual environment created in Lab 1B will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab1](Lab1.md) to setup your new virtual environment and reinstall the packages from Lab 1B.
 
 ### Install pip packages
 1. Activate your virtual environment.
