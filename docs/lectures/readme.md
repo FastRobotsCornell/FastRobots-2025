@@ -24,7 +24,7 @@ Lecture slides will be uploaded on this page.
 * [Lecture 16 - Graph Search](./FastRobots2025_Lecture16_graphsearch.pdf)
 * [Lecture 17 - Markov and Bayes Filter I](./FastRobots2025_Lecture17_markovbayesfilter1.pdf)
 * [Lecture 18 - Motion models](./FastRobots2025_Lecture18_motionmodels.pdf)
-* Lecture 19 - Sensor models
+* [Lecture 19 - Sensor models](./FastRobots2025_Lecture19_sensormodels.pdf)
 * Lecture 20 - Bayes Filter II
 * Lecture 21 - Simulator
 * Lecture 22 - Particle Filters and intro to SLAM, [Video Lecture from 2023](https://www.youtube.com/watch?v=C0uK62BhDxA)
