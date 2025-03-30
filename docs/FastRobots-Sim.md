@@ -37,7 +37,7 @@ You will be programming the controller in Python to perform various functions on
 
 
 ## Computer Setup
-### WSL
+<!--### WSL
 WSL users should continue to use WSL (for Bluetooth reliability) and should follow the
 Linux instructions when applicable. The provided WSL distribution comes with Python 3.9
 and works without upgrading to a later Python version.
@@ -63,7 +63,7 @@ This is a reminder to upgrade python (3.10 for Windows/Mac, 3.9 for Linux/WSL) a
 </ol>
 
 #### Install Python Dependencies
-If you just upgraded your Python version and used an older version in Lab1B, then the virtual environment created in Lab 1B will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab1](Lab1.md) to setup your new virtual environment and reinstall the packages from Lab 1B.
+If you just upgraded your Python version and used an older version in Lab1B, then the virtual environment created in Lab 1B will no longer be compatible. Inside your project folder, delete the directory with the name of your virtual environment (**FastRobots_ble**). Verify it is actually deleted! Now, follow instructions in [Lab1](Lab1.md) to setup your new virtual environment and reinstall the packages from Lab 1B. -->
 
 ### Install pip packages
 1. Activate your virtual environment.
@@ -77,23 +77,21 @@ If you just upgraded your Python version and used an older version in Lab1B, the
 to make sure that tkinter is set up correctly. If the Tkinter module isn't
 installed, run
 ```pip install tk```
-and try the
+and try
 ```python -m tkinter```
 again.
 
 ### Install Box2D package
 #### Installing from a pip wheel
-1. Activate your virtual environment.
-2. Download the [pip wheel](https://github.com/CEI-lab/FastRobots-sim-release/releases/tag/v2_3_10) that matches your OS and Python version. For example, MacOS with
-Python 3.10 would download the wheel with ```cp310-macosx```.
+1. Navigate to your project directory and activate your virtual environment.
+2. Download the [pip wheel](https://pypi.org/project/Box2D/#files) and place it in your project directory. The wheel file needs to match your OS and Python version. For example, MacOS (ARM) with Python 3.10 would download the wheel with ```cp310-macosx_11_0_arm64```.
 
 >Note: The python version must match the wheel exactly (newer versions don't work) or else you will get a message of the type: ERROR:&lt;wheel file&gt; is not a supported wheel on this platform.
 
->Another Note: For Windows users, call different installed versions of python using the command "py -3.x" instead of "python3", so calling python 3.10 is now "py -3.10". Mac/Linux users should call "python3.x" for a similar effect.
+>Another Note: If you have multiple version of python, you should call the specific version using the command "py -3.x" (windows) or "python3.x" (Mac/Linux) instead of "python3. So calling python 3.10 is now "py -3.10".
 
 3. Install <b>Box2D</b> from pip
-  > Replace &lt;wheel file&gt; with the path to the
-  wheel that you downloaded
+  > Replace &lt;wheel file&gt; with the name of the wheel file in your project directory.
   ```bash
   pip install <wheel file>
   ```
@@ -111,8 +109,8 @@ Python 3.10 would download the wheel with ```cp310-macosx```.
 5. If the above command displays "2.3.10", you are done! Skip the next section ("Installing from source").
 
 #### Installing from source
-Follow the instructions in this section IF AND ONLY IF **Box2D** was NOT successfully installed in the previous section.
-<div class="tab">
+Follow the instructions [here](https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md) **IF AND ONLY IF** Box2D was NOT successfully installed in the previous section.
+<!--<div class="tab">
     <button class="tablinks 2 active" onclick="openTab(event, 'L2', '2')">Linux/FreeBSD</button>
     <button class="tablinks 2" onclick="openTab(event, 'W2', '2')">Windows</button>
     <button class="tablinks 2" onclick="openTab(event, 'M2', '2')">macOS</button>
@@ -165,7 +163,7 @@ python setup.py install</code></pre></div></div>
 cd pybox2d
 python setup.py build
 python setup.py install</code></pre></div></div>  
-</div>
+</div> -->
 
 ## Instructions
 1. Download and extract the [simulation base code](https://github.com/CEI-lab/FastRobots-sim-release) into your project folder.
