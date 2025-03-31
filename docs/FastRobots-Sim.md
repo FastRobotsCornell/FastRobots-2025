@@ -166,8 +166,8 @@ python setup.py install</code></pre></div></div>
 </div> -->
 
 ## Instructions
-1. Download and extract the [simulation base code](https://github.com/CEI-lab/FastRobots-sim-release) into your project folder.
-2. Download the notebook from [here](https://github.com/CEI-lab/FastRobots-JupyterSim) and copy *inClassDemo.ipynb* file into the **notebooks** directory (inside the simulation base code directory).
+1. Download and extract the [simulation base code](https://github.com/FastRobotsCornell/FastRobots-sim-release) into your project directory.
+2. Open the *inClassDemo.ipynb* file in the **notebooks** directory.
 3. Follow the instructions in the notebook to understand how to control your virtual robot and use the plotter.
 
 ## Tasks (We will do these as an in-class exercise)
