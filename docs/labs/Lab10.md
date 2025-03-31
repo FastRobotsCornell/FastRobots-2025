@@ -15,7 +15,7 @@ Follow the instructions to [setup the simulator](../FastRobots-Sim.md). Please r
 Robot localization is the process of determining where a mobile robot is located with respect to its environment. Plotting odometry against the ground truth in the previous lab should have convinced you that non-probabilistic methods lead to poor results.
 
 #### Grid Localization
-The robot state is 3 dimensional and is given by <img src="https://latex.codecogs.com/svg.latex?\(x,y,\theta)">.
+The robot state is 3 dimensional and is given by $(x,y,\theta)$.
 The robot's world is a continuous space that spans from:
 - [-1.6764, +1.9812) meters or [-5.5, 6.5) feet in the x direction,
 - [-1.3716, +1.3716) meters or [-4.5, +4.5) feet in the y direction,
@@ -26,9 +26,9 @@ The robot's world is a continuous space that spans from:
     We are using the floor tiles in the lab for discretization and each tile is 1 feet. It helps with visually tracking the discretized robot pose. All the quantities in the simulation base code are expressed in S.I. units, unless stated otherwise.
 </details><br>
 
-There are infinitely many poses the robot can be at within this bounded space. We thus discretize the continuous state space into a finite 3D grid space, where the three axes represent <img src="https://latex.codecogs.com/svg.latex?x">, <img src="https://latex.codecogs.com/svg.latex?y"> and <img src="https://latex.codecogs.com/svg.latex?\theta">. This reduces the accuracy of the estimated state as we cannot distinguish between robot states within the same grid cell, but allows us to compute the belief over a finite set of states in reasonable time.
+There are infinitely many poses the robot can be at within this bounded space. We thus discretize the continuous state space into a finite 3D grid space, where the three axes represent $x$, $y$, and $\theta$. This reduces the accuracy of the estimated state as we cannot distinguish between robot states within the same grid cell, but allows us to compute the belief over a finite set of states in reasonable time.
 
-The grid cells are identical in size. The size of each grid cell (i.e resolution of the grid) along the <img src="https://latex.codecogs.com/svg.latex?x">, <img src="https://latex.codecogs.com/svg.latex?y"> and <img src="https://latex.codecogs.com/svg.latex?\theta"> axes are  0.3048 m, 0.3048 meters and 20 degrees, respectively. The total number of cells along each axis are (12,9,18). Each grid cell stores the probability of the robot's presence at that cell. The belief of the robot is therefore represented by the set of probabilities of each grid cell and these probabilities should sum to 1. The Bayes filter algorithm updates the probability of the robot’s presence in each grid cell as it progresses. The grid cell(s) with the highest probability (after each iteration of the bayes filter) represents the most probable pose of the robot. Thus the most probable cell across different time steps characterizes the robot’s trajectory.
+The grid cells are identical in size. The size of each grid cell (i.e resolution of the grid) is $x =0.3048 \mathrm{m}$, $y =0.3048 \mathrm{m}$, and $\theta =20^\circ$. The total number of cells along each axis are (12,9,18). Each grid cell stores the probability of the robot's presence at that cell. The belief of the robot is therefore represented by the set of probabilities of each grid cell and these probabilities should sum to 1. The Bayes filter algorithm updates the probability of the robot’s presence in each grid cell as it progresses. The grid cell(s) with the highest probability (after each iteration of the bayes filter) represents the most probable pose of the robot. Thus the most probable cell across different time steps characterizes the robot’s trajectory.
 
 
 ##### 3D Grid Visual Example
@@ -70,7 +70,7 @@ Perform Grid localization for the sample trajectory.
 - At all times, make sure only ONE instance of the plotter and simulator is running. Avoid running multiple simulation notebooks concurrently.
 - If the plotter becomes sluggish over long operating times, restart it.
 - There is a small "A" button on the bottom left corner of the plotter tool that zooms the plot to fit in the window.
-- Use <TAB> for code completion in Jupyter Lab.
+- Use `TAB` for code completion in Jupyter Lab.
 - There is a lot of information in the jupyter notebook. You can collapse a cell by clicking on the blue vertical bar to the left of cell, when you hover the mouse over it.
 - Consider creating a copy of the base notebook and remove/collapse unnecessary cells.
 
@@ -114,16 +114,14 @@ All the quantities in the RHS (Right Hand Side) of the above equation is known, 
 ##### Sensor Model with multiple individual measurements
 Each measurement <img src="https://latex.codecogs.com/svg.latex?z_{t}"> consists of 18 different individual measurements <img src="https://latex.codecogs.com/svg.latex?z^{1}_{t}, z^{2}_{t}, ...., z^{18}_{t}"> recorded at equidistant angular positions during the robot's (anti-clockwise) rotation behavior. The 18 true measurements values are recorded at the same equidistant angular positions for each grid cell (state) and is available through the **Mapper** class. Therefore, each index of the member variable array **obs_views** (of class **Mapper**) is the true individual measurement of the corresponding index of the member variable array **obs_range_data** (of class **BaseLocalization**). You do not need to use **obs_bearing_data** in your bayes filter implementation.
 
-You will need to find the likelihood of the 18 measurements given a state i.e.
-
-<p align="center"><img src="https://latex.codecogs.com/svg.latex?p(z_{t}|x_{t},m) = \prod_{k=1}^{18} p(z^{k}_{t}|x_{t}, m)" width=300></p>
+You will need to find the likelihood of the 18 measurements given a state, i.e. $p(z_{t}|x_{t},m) = \prod_{k=1}^{18} p(z^{k}_{t}|x_{t}, m)$.
 
 In the above equation, we assume that individual measurements are independent given the robot state. 
 
 ##### Normalizing your angles
 The third dimension of the grid represents the orientation (yaw) in the range \[-180,+180\) degrees. When dealing with angles in your bayes filter (for example in calculating rotation1 and rotation2 in the odom motion model), you need to make sure the final angles are in the above range.
 
-Think about what happens when you use a Gaussian to model a rotation of 350 degrees where the true value is -10 degrees and standard deviation is 20 degrees. <img src="https://latex.codecogs.com/svg.latex?\mathcal{N}(350|\mu=-10,\sigma=20)"> is highly unlikely though 350 degrees is equivalent to -10 degrees. 
+Think about what happens when you use a Gaussian to model a rotation of 350 degrees where the true value is -10 degrees and standard deviation is 20 degrees. $\mathcal{N}(350|\mu=-10,\sigma=20)$ is highly unlikely though 350 degrees is equivalent to -10 degrees. 
 
 Use the function **normalize_angle** from class **Mapper** to normalize your angles when necessary.
 
