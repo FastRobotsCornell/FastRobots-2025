@@ -16,7 +16,7 @@ The quality of your map will depend on how many readings you manage to obtain du
 
 ## Prelab
 
-Consider checking out [Lecture 2 on transformation matrices](../lectures/FastRobots2025_Lecture2-Tmatrices.pdf) again.
+Consider checking out [Lecture 2 on transformation matrices](../lectures/FastRobots2025_Lecture2_Tmatrices.pdf) again.
 
 ### Control
 
