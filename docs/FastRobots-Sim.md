@@ -110,62 +110,6 @@ again.
 
 #### Installing from source
 Follow the instructions [here](https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md) **IF AND ONLY IF** Box2D was NOT successfully installed in the previous section.
-<!-- <div class="tab">
-    <button class="tablinks 2 active" onclick="openTab(event, 'L2', '2')">Linux/FreeBSD</button>
-    <button class="tablinks 2" onclick="openTab(event, 'W2', '2')">Windows</button>
-    <button class="tablinks 2" onclick="openTab(event, 'M2', '2')">macOS</button>
-    </div>
-
-  <div id="L2" class="tabcontent 2" style="display: block">
-   1. Activate your virtual environment. <br>
-   2. Download and install the latest version of <b>swig</b> with your package manager. For example, in a Debian distro:
-   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install build-essential python-dev swig python-pygame git</code></pre></div></div>
-   3. Clone the git repository
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/pybox2d/pybox2d</code></pre></div></div>
-   4. Build and install the <b>pybox2d</b> library
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python setup.py build
-python setup.py install</code></pre></div></div>
-  </div>
-
-  <div id="W2" class="tabcontent 2">
-   1. Start an elevated Powershell: Type <i>"Powershell"</i> in your start menu, rightclick on the <i>Windows PowerShell</i> icon, and click on <i>Run as Administrator</i>. <br>
-   2. With PowerShell, you must ensure Get-ExecutionPolicy is not Restricted. <br>
-   3. Set the execution policy: Run the following command,
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Get-ExecutionPolicy</code></pre></div></div> 
-  4. If the command returns <i>"Restricted"</i>, then run 
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-ExecutionPolicy AllSigned</code></pre></div></div>
-  5. Install <b>choco</b>: Run the following command
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))</code></pre></div></div>
-  6. Close the powershell window. <br>
-  7. Start a new elevated powershell window. <br>
-  8. Install <b>swig</b>: Run the following command
-   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install swig</code></pre></div></div>
-  9. Install <b>git</b>: Run the following command
-   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco install git</code></pre></div></div>
-  10. Close the powershell window. <br>
-  11. Start a new elevated Powershell: Type <i>"Powershell"</i> in your start menu, rightclick on the <i>Windows PowerShell</i> icon, and click on <i>Run as Administrator</i>. <br>
-  12. Activate your virtual environment. (If you have issues with execution priveleges in Powershell, check out this <a href="https://stackoverflow.com/questions/18713086/virtualenv-wont-activate-on-windows">solution</a>) <br>
-  13. Clone the repo, and install the python package.
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/pybox2d/pybox2d
-cd pybox2d
-python setup.py build
-python setup.py install</code></pre></div></div>  
-</div>
-
-  <div id="M2" class="tabcontent 2">
-    1. Install <b>brew</b>:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre></div></div>
-    2. Install <b>swig</b>:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install swig</code></pre></div></div> 
-    3. Activate your virtual environment. <br>
-    4. Clone the repo, and install the python package.
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/pybox2d/pybox2d
-cd pybox2d
-python setup.py build
-python setup.py install</code></pre></div></div>  
-</div> 
-
--->
 
 ## Instructions
 1. Download and extract the [simulation base code](https://github.com/FastRobotsCornell/FastRobots-sim-release) into your project directory.
