@@ -42,7 +42,7 @@ If your control is based on orientiation aim for at least 14 readings (roughly 2
 
 ### Read out Distances
 
-1. Execute your turn at each of the marked positions in the lab space. (If you are low on time, doing this in the Phillips hallway or at home to show that your concept works is okay). 
+1. Execute your turn at each of the marked positions in the lab space: (-3,-2), (5,3), (0,3), and (5,-3). You are welcome to do more locations if you would like to improve your map. (If you are low on time, doing this in the Phillips hallway or at home to show that your concept works is okay). 
    - During the turn, measure the distance using one or more ToF sensor(s) mounted on the robot. When the turn is completed return the data to the computer over Bluetooth. 
    - To make it easier on yourself, start the robot in the same orientation in all scans.    
    - Consider whether your robot behavior is reliable enough to assume that the readings are spaced equally in angular space, or if you are better off trusting the orientation from gyroscope values.
