@@ -110,7 +110,7 @@ again.
 
 #### Installing from source
 Follow the instructions [here](https://github.com/pybox2d/pybox2d/blob/master/INSTALL.md) **IF AND ONLY IF** Box2D was NOT successfully installed in the previous section.
-<!--<div class="tab">
+<!-- <div class="tab">
     <button class="tablinks 2 active" onclick="openTab(event, 'L2', '2')">Linux/FreeBSD</button>
     <button class="tablinks 2" onclick="openTab(event, 'W2', '2')">Windows</button>
     <button class="tablinks 2" onclick="openTab(event, 'M2', '2')">macOS</button>
@@ -163,7 +163,9 @@ python setup.py install</code></pre></div></div>
 cd pybox2d
 python setup.py build
 python setup.py install</code></pre></div></div>  
-</div> -->
+</div> 
+
+-->
 
 ## Instructions
 1. Download and extract the [simulation base code](https://github.com/FastRobotsCornell/FastRobots-sim-release) into your project directory.
