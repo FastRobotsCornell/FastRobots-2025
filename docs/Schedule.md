@@ -17,10 +17,10 @@ All deadlines are specified on Canvas.
 | 7  (TR) | [Probability, Bayes theorem](./lectures/FastRobots-12-Probability_BayesTheorem.pdf), [Observability/LQG/KF](./lectures/FastRobots2025_Lecture13_Observability.pdf),                                     | [Lab 5, Linear PID control and Linear interpolation](labs/Lab5.md)                                            |
 | 8  (TR) | [Path Planning (local)](./lectures/FastRobots2025_Lecture14_KFcont.pdf), [Map representations, PRM, RRT](./lectures/FastRobots2025_Lecture15_mapsgraphs.pdf)                                              | [Lab 6, Orientation PID control](labs/Lab6.md)                              |
 | 9  (TR) | [Graph search](./lectures/FastRobots2025_Lecture16_graphsearch.pdf), [Markov models, Bayes filter I](./lectures/FastRobots2025_Lecture17_markov_bayesfilter1.pdf)                            | [Lab 7, Kalman Filter](labs/Lab7.md)                                                         |
-| 10 (TR) | [Motion models](./lectures/FastRobots2025_Lecture18_motionmodels.pdf), sensor models                         | [Lab 8, Stunts](labs/Lab8.md)                                                     |
+| 10 (TR) | [Motion models](./lectures/FastRobots2025_Lecture18_motionmodels.pdf), [Sensor models](./lectures/FastRobots2025_Lecture19_sensornmodels.pdf)                         | [Lab 8, Stunts](labs/Lab8.md)                                                     |
 | 11 (  ) | Spring break                                                         | No lab                                                                          |
-| 12 (TR) | Bayes filter II, [In-class simulator setup](FastRobots-Sim.md)       | [Lab 9, Mapping (real)](labs/Lab9.md)                                               |
-| 13 (TR) | SLAM, Ethics I                                                       | Lab 10, Localization (sim)                                          |
+| 12 (TR) | [Bayes filter II](./lectures/FastRobots2025_Lecture20_bayesfilter2.pdf), [In-class simulator setup](FastRobots-Sim.md)       | [Lab 9, Mapping (real)](labs/Lab9.md)                                               |
+| 13 (TR) | SLAM, Ethics I                                                       | [Lab 10, Localization (sim)](labs/Lab10.md)                                           |
 | 14 (TR) | Ethics II, Trivia                                                    | Lab 11, Localization (real)                                         |
 | 15 (TR) | Olaf van Bruggen (ASML), TBD    | Lab 12, Planning and execution (real)                              |
 | 16 (T)  | Final Showcase                                                       | Lab 12, Planning and execution (real)                               |
