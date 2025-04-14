@@ -13,6 +13,6 @@
 * [Lab 7: Kalman Filtering](./Lab7.md)
 * [Lab 8: Stunts!](./Lab8.md)
 * [Lab 9: Mapping](./Lab9.md)
-* Lab 10: Localization (sim)
+* [Lab 10: Localization (sim)](./Lab10.md)
 * Lab 11: Localization (real)
 * Lab 12: Planning and Execution
