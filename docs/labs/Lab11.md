@@ -13,10 +13,10 @@ In this lab you will perform localization with the Bayes filter on your actual r
 
 ## Prelab
 ### Lectures
-Consider going through the lectures on [Sensor Models](lectures/FastRobots-18-SensorModel.pdf), [Motion models](lectures/FastRobots-17-Motion_models.pdf), and the [Bayes Filter](lectures/FastRobots-16-Markov_BayesFilter1.pdf).
+Consider going through the lectures on [Sensor Models](./lectures/FastRobots2025_Lecture19_sensormodels.pdf), [Motion models](./lectures/FastRobots2025_Lecture18_motionmodels.pdf), and the [Bayes Filter](./lectures/FastRobots2025_Lecture17_markov_bayesfilter1.pdf).
 
 ### Grid Localization
-Please refer to the [simulation setup](FastRobots-Sim.md) and [Lab 10](Lab10.md).
+Please refer to the [simulation setup](../FastRobots-Sim.md) and [Lab 10](Lab10.md).
 
 ### Localization Module: 
 We provide you with a fully-functional and optimized Bayes filter implementation that works on the virtual robot. You will make changes in the code so that the module can work with your real robot. Note the time it takes to run the prediction and update step. You will find that we took several measures to enable fast computation in practice:
@@ -91,4 +91,4 @@ np.array(array)[np.newaxis].T
    > NOTE: You could skip the above steps and instead directly call the asyncio sleep coroutine as `asyncio.run(asyncio.sleep(3))` inside the non-async function `RealRobot.perform_observation_loop()`, however, this *may not* be the right way to use asyncio coroutines and could pose issues.
 
 ## Write-up
-To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1.000 words), with code (not included in the word count), photos, and videos documenting that everything worked and what you did to make it happen. Include the robot's belief after localization for each pose, compare it with the ground truth pose, and write down your inference.
+To demonstrate that you've successfully completed the lab, please upload a brief lab report (<1000 words), with code (not included in the word count), photos, and videos documenting that everything worked and what you did to make it happen. Include the robot's belief after localization for each pose, compare it with the ground truth pose, and write down your inference.
