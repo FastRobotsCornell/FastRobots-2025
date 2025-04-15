@@ -14,5 +14,5 @@
 * [Lab 8: Stunts!](./Lab8.md)
 * [Lab 9: Mapping](./Lab9.md)
 * [Lab 10: Localization (sim)](./Lab10.md)
-* Lab 11: Localization (real)
-* Lab 12: Planning and Execution
+* [Lab 11: Localization (real)](./Lab11.md)
+* [Lab 12: Planning and Execution](./Lab12.md)
