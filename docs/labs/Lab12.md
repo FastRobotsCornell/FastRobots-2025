@@ -5,7 +5,7 @@
 # Lab 12: Path Planning and Execution
 
 ## Objective
-_Congratulations!_ You have built a robot (Labs 2-4) with debugging capability (Lab 1) and closed loop control (Labs 5-7). You've shown its ability to map its environment (Lab 9), and to localize within it (Labs 10-11). The final piece of puzzle is to have the robot navigate through a set of waypoints in that environment as quickly and accurately as possible. 
+_Congratulations!_ You have built a robot (Labs 2-4) with debugging capability (Lab 1) and closed loop control (Labs 5-7) that can perform amazing stunts (Lab 8). You've shown its ability to map its environment (Lab 9), and to localize within it (Labs 10-11). The final piece of puzzle is to have the robot navigate through a set of waypoints in that environment as quickly and accurately as possible. 
 
 This lab is intentionally very open ended, we encourage creativity and you should feel free to tailor your solution to the system you have developed. Make sure your lab report describes what options you have considered and why you choose the methods you do.
 
