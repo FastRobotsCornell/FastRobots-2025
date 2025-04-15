@@ -84,8 +84,8 @@ np.array(array)[np.newaxis].T
 
 4. If you need to use an `await` inside `RealRobot.perform_observation_loop()` for some reason (for e.g. you are using BLE handlers to get the observation data from the real robot), you need to make changes to the localization functions which call this function. Here is a walkthrough of the function definitions that need to be modified:
    1. Add the `async`  keyword to the function defintion `RealRobot.perform_observation_loop()`
-   2. Add the `async`  keyword to the function defintion `BaseLocalization.get_observation_data()` [[Ref](https://github.com/FastRobotsCornell/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L311)]
-   3. Add the `await` keyword when calling the async coroutine `perform_observation_loop()` [[Ref](https://github.com/FastRobotsCornell/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L312)]
+   2. Add the `async`  keyword to the function defintion `BaseLocalization.get_observation_data()` [[Ref](https://github.com/FastRobotsCornell/FastRobots-sim-release/blob/baa590c433c733609d56eeb2a46334981133184f/localization.py#L311)]
+   3. Add the `await` keyword when calling the async coroutine `perform_observation_loop()` [[Ref](https://github.com/CEI-lab/FastRobots-sim-release/blob/6175d6cda8d15b10ba611e5d41f91822465cf818/localization.py#L312)]
    4. In the code cell in the Jupyter notebook [lab11_real.ipynb](https://github.com/FastRobotsCornell/Localization-real-code/blob/main/lab11_real.ipynb), append the `await` keyword to the line `loc.get_observation_data()`
 
    > NOTE: You could skip the above steps and instead directly call the asyncio sleep coroutine as `asyncio.run(asyncio.sleep(3))` inside the non-async function `RealRobot.perform_observation_loop()`, however, this *may not* be the right way to use asyncio coroutines and could pose issues.
