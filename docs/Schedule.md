@@ -23,4 +23,4 @@ All deadlines are specified on Canvas.
 | 13 (TR) | [Particle Filters and SLAM](./lectures/FastRobots2025_Lecture_22_SLAM.pdf)                                                       | [Lab 10, Localization (sim)](labs/Lab10.md)                                           |
 | 14 (TR) | Ethics Week                                                  | [Lab 11, Localization (real)](labs/Lab11.md)                                         |
 | 15 (TR) | Olaf van Bruggen (ASML), Trivia    | [Lab 12, Planning and execution (real)](labs/Lab12.md)                              |
-| 16 (T)  | Final Showcase                                                       | See open hours for availability over Finals                              |
+| 16 (T)  | Final Showcase                                                       | See google calendar for open hours over Finals                              |
