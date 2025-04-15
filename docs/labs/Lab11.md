@@ -8,12 +8,12 @@
 In this lab you will perform localization with the Bayes filter on your actual robot. Note that we will only use the update step based on full 360 degree scans with the ToF sensor, because the motion of these particular robots is typically so noisy that it does not help us to do the prediction step. The point of the lab is to appreciate the difference between simulation and real-world systems. We will provide you with an optimized version of the localization code.
 
 ## Parts Required
-* 1 x Fully assembled [robot](https://force1rc.com/products/cyclone-remote-control-car-for-kids-adults), with [Artemis](https://www.sparkfun.com/products/15443), [TOF sensors](https://www.pololu.com/product/3415), and an [IMU](https://www.digikey.com/en/products/detail/pimoroni-ltd/PIM448/10246391).
+* 1 x Fully assembled [robot](https://force1rc.com/products/cyclone-remote-control-car-for-kids-adults), with [Artemis](https://www.sparkfun.com/products/15443), [TOF sensors](https://www.pololu.com/product/3415), and an [IMU](https://www.sparkfun.com/sparkfun-9dof-imu-breakout-icm-20948-qwiic.html).
 
 
 ## Prelab
 ### Lectures
-Consider going through the lectures on [Sensor Models](./lectures/FastRobots2025_Lecture19_sensormodels.pdf), [Motion models](./lectures/FastRobots2025_Lecture18_motionmodels.pdf), and the [Bayes Filter](./lectures/FastRobots2025_Lecture17_markov_bayesfilter1.pdf).
+Consider going through the lectures on [Sensor Models](../lectures/FastRobots2025_Lecture19_sensormodels.pdf), [Motion models](../lectures/FastRobots2025_Lecture18_motionmodels.pdf), and the [Bayes Filter](../lectures/FastRobots2025_Lecture17_markov_bayesfilter1.pdf).
 
 ### Grid Localization
 Please refer to the [simulation setup](../FastRobots-Sim.md) and [Lab 10](Lab10.md).
