@@ -37,8 +37,8 @@ You can use both your ToF sensors to collectively output sensor range readings a
 
 
 ## Setup the base code
-1. Copy *lab11_sim.ipynb* and *lab11_real.ipynb* from [here](https://github.com/CEI-lab/FastRobots-lab11) into the **notebooks** directory (inside the simulation base code directory).
-2. Copy *localization_extras.py* from [here](https://github.com/CEI-lab/FastRobots-lab11) into the **root** directory (inside the **FastRobots-sim-release** directory).
+1. Copy *lab11_sim.ipynb* and *lab11_real.ipynb* from [here](https://github.com/FastRobotsCornell/Localization-real-code) into the **notebooks** directory (inside the simulation base code directory).
+2. Copy *localization_extras.py* from [here](https://github.com/FastRobotsCornell/Localization-real-code) into the **root** directory (inside the **FastRobots-sim-release** directory).
 3. You will need to copy the necessary Bluetooth python modules (present inside directory **ble_python**) from your previous labs. Copy **ONLY** the files "*base_ble.py*", "*ble.py*", "*connection.yaml*" and "*cmd_types.py*" into the **notebooks** directory.
    > Do not copy the *utils.py* file.
 
