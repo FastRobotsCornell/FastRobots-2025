@@ -13,7 +13,7 @@ For example,
 * Global path planning: You can consider using graph search algorithms to plan an optimal path between way points, or skip it altogether and rely on local path planning and obstacle avoidance. 
 * Local path planning: In free space, you can consider using the turn-go-turn procedure from the odometry model. When there are obstacles, consider using the Bug 0-2 algorithm.  
 * Feedback control: Again, use whatever control works best for your robot. Maybe it works fine open loop with timed controls. Alternatively, for straight line movement, you can consider doing position control with respect to the change in ToF values. For rotations, consider doing orientation control based on the gyroscope readings. 
-* Localization: How fast and accurately does your localization code work? Consider whether you want to localize after every intermediate waypoint, or if you can do it more sparsely. Bonus points if you can get your magnetometer to give you absolute heading!
+* Localization: How fast and accurately does your localization code work? Consider whether you want to localize after every intermediate waypoint, or if you can do it more sparsely.
 * Onboard/offboard: Remember, you are not limited to the structure of the previous labs. Do whatever works better for your system. Perhaps you want the computer to be in full control of sending commands, or perhaps the robot should be in control using the computer only to process localization requests. 
 
 We highly encourage collaboration, just be sure to credit your partners.
