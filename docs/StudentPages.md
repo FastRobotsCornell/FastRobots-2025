@@ -12,7 +12,7 @@
 * [Henry Calderon](https://henrycc24.github.io/)
 * [Sana Chawla](https://sanac17.github.io/fastRobots/)
 * [Jorge Corpa Chung](https://jorgecorpa.github.io/FastRobots/)
-* [Lucca Correia](https://correial.github.io/)
+* [Lucca Correia](https://correial.github.io/LuccaFastRobots/)
 * [Giacomo Cuomo](https://giacomoyongcuomo.github.io/ece4160_Fast-Robots/)
 * [Trevor Dales](https://trevordales.github.io/)
 * [Aidan Derocher](https://boltstrike.github.io/index.html)
