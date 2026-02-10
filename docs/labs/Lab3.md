@@ -38,6 +38,7 @@ While you can choose to ignore the robot in this lab, you will have to permanent
 ## Instructions
 
 1. Power up your Artemis with a battery!
+    - Please refer to: https://consolemods.org/wiki/Intro_to_Soldering for detailed soldering instructions!
     - You will need a JST connector and one of the 650mAh batteries from your RC car. 
     - Separate the wires on your battery and cut them **one at a time**. Cutting both wires at the same time will short the terminals and destroy your battery. If you do short your battery, please inform one of the TAs.
     - Solder the battery wires to the JST jumper wires. If you are unsure how to do this, please ask one of the TAs.
@@ -45,21 +46,21 @@ While you can choose to ignore the robot in this lab, you will have to permanent
     - Check the polarity of these wires (positive on the battery should be connected to the positive terminal on your Artemis -- this may mean that you need to connect opposite color wires).
     - Power up your Artemis using only the battery and no connection through the USB C port. Try sending BLE messages back and forth from your laptop to ensure that the Artemis is powered on correctly and can send messages completely untethered.
 
-2. Using the Arduino library manager, install the SparkFun VL53L1X 4m laser distance sensor library.
+3. Using the Arduino library manager, install the SparkFun VL53L1X 4m laser distance sensor library.
 
-3. Connect the QWIIC break-out board to the Artemis
+4. Connect the QWIIC break-out board to the Artemis
 
-4. Connect the first ToF sensor to the QWIIC breakout board.
+5. Connect the first ToF sensor to the QWIIC breakout board.
    - You will have to cut one end of a QWIIC cable and solder the other to your sensor. You have two long cables and two short ones, choose wisely. 
    - Think about which color attaches to SDA/SCL?
    - The photo below is an example of a sensor with a cable. Note that the protective film has not yet been removed.
    <p align="center"><img src="../Figs/ToFsensor.jpg" width="700"></p>
 
-5. Scan the I2C channel to find the sensor
+6. Scan the I2C channel to find the sensor
    - Go to File->Examples->Apollo3->Wire and open Example1_wire_I2C
    - Browse through the code to see how to use i2c commands. 
    - Run the code. Does the address match what you expected? If not, explain why.
-6. The ToF sensor has three modes (Short, Medium, and Long) that optimize the ranging performance given the maximum expected range. Discuss the pros/cons of each mode, and think about which one could work on the final robot. (Note: medium mode is only available with the [Polulu VL53L1X Library](https://github.com/pololu/vl53l1x-arduino.git)).
+7. The ToF sensor has three modes (Short, Medium, and Long) that optimize the ranging performance given the maximum expected range. Discuss the pros/cons of each mode, and think about which one could work on the final robot. (Note: medium mode is only available with the [Polulu VL53L1X Library](https://github.com/pololu/vl53l1x-arduino.git)).
    
    <code><pre>
    .setDistanceModeShort();  //1.3m
@@ -67,24 +68,24 @@ While you can choose to ignore the robot in this lab, you will have to permanent
    .setDistanceModeLong();   //4m, Default
    </code></pre>
 
-7. Test your chosen mode 
+8. Test your chosen mode 
    - Use the "..\Arduino\libraries\SparkFun_VL53L1X_4m_Laser_Distance_Sensor\examples\Example1_ReadDistance" example
    - Document your ToF sensor range, accuracy, repeatability, and ranging time
    - The figure below is an example from 2020, when students measured the accuracy and repeatability in different lighting conditions, and timing for various code setups (these are not all required tasks for this year), however, we highly recommend generating your plots in the Jupyter notebook to gain more familiarity with the environment, e.g. using [matplotlib](https://matplotlib.org/).    
    <p align="center"><img src="../Figs/ToF_characterization.png" width="700"></p>
 
-8. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both work. 
+9. Using notes from the pre-lab, hook up both ToF sensors simultaneously and demonstrate that both work. 
    - Don't use the Example1_wire code to do this, it works poorly when multiple sensors are attached.  
 
-9. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when available.
+10. In future labs, it is essential that the code executes quickly, therefore you cannot let your code hang while it waits for the sensor to finish a measurement. Write a piece of code that prints the Artemis clock to the Serial as fast as possible, continuously, and prints new ToF sensor data from both sensors only when available.
    - The distanceSensor.checkForDataReady() routine can be called to check when new data is available.
    - How fast does your loop execute, and what is the current limiting factor?
 
-10. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data and IMU data for a set period of time, and then send it over Bluetooth to your computer.
+11. Finally, edit your work from Lab 1, such that you can record time-stamped ToF data and IMU data for a set period of time, and then send it over Bluetooth to your computer.
     
-11. Include a plot of the ToF data against time.
+12. Include a plot of the ToF data against time.
     
-12. Include a plot of the IMU data against time.
+13. Include a plot of the IMU data against time.
    
 
 
