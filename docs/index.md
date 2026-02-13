@@ -4,7 +4,7 @@
 
 This course focuses on systems level design and implementation of dynamic autonomous robots. We will design a fast autonomous car and explore dynamic behaviors, acting forces, sensors, and reactive control on an embedded processor, as well as the benefit of partial off-board computation, low-latency software, and noise-tolerant implementation.
   
-  <img src="Figs/Main_page.png" width="500">
+  <img src="Figs/MainPage.svg" width="500">
   
 Instead of traditional hand-ins, we leverage peer-to-peer mentoring where students, under guidance, upload their progress and ideas to create a sustainable and continuously evolving database for future students to rely on.
 
